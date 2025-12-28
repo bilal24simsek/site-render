@@ -27,9 +27,20 @@
             <div class="relative" data-aos="zoom-in">
                 <div class="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full opacity-50"></div>
                 <div class="relative bg-slate-900/50 border border-white/10 p-4 rounded-3xl backdrop-blur-xl">
-                    <div class="aspect-video bg-slate-800 rounded-2xl flex items-center justify-center overflow-hidden">
-                        <span class="material-symbols-outlined text-8xl text-blue-500/50">monitoring</span>
-                        @* Placeholder for a video or image *@
+                    <div class="aspect-video bg-slate-800 rounded-2xl flex items-center justify-center overflow-hidden relative">
+                        <!-- Premium Logo Animation -->
+                        <div class="relative flex items-center justify-center">
+                            <div class="absolute inset-0 w-32 h-32 bg-blue-500 rounded-full blur-[50px] opacity-20 animate-pulse"></div>
+                            <div class="relative z-10 w-24 h-24 bg-slate-900 rounded-2xl border border-slate-700 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-500">
+                                <span class="material-symbols-outlined text-5xl text-blue-500 animate-pulse">bolt</span>
+                            </div>
+                            <!-- Orbiting particles -->
+                            <div class="absolute inset-0 animate-[spin_10s_linear_infinite]">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full absolute -top-8 left-1/2 -translate-x-1/2 shadow-[0_0_10px_#60a5fa]"></div>
+                                <div class="w-1.5 h-1.5 bg-blue-600 rounded-full absolute -bottom-6 left-1/2 -translate-x-1/2 shadow-[0_0_10px_#2563eb]"></div>
+                            </div>
+                            <div class="absolute inset-0 animate-[spin_15s_linear_infinite_reverse] w-[180%] h-[180%] left-[-40%] top-[-40%] border border-dashed border-blue-500/20 rounded-full"></div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -117,3 +117,4 @@ C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\re
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.pdb
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.genruntimeconfig.cache
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\ref\Sitem.Web.dll
+C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.sourcelink.json

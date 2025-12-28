@@ -774,12 +774,23 @@
 
                         <div class="mobile-menu hidden md:hidden" data-mobile-menu>
                             <nav class="flex flex-col p-2 space-y-1">
+                            <nav class="flex flex-col p-2 space-y-1">
+                                <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors" href="/EnergySolutions">Enerji Çözümleri</a>
                                 <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors" href="/">Ana Sayfa</a>
-                                <div class="px-3 py-2 text-[10px] font-black uppercase text-slate-400 dark:text-slate-500 tracking-widest">Ürünlerimiz</div>
-                                <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/yemvars"><span class="material-symbols-outlined text-primary text-sm">bolt</span> YEMVARS</a>
-                                <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/hawketl"><span class="material-symbols-outlined text-primary text-sm">conversion_path</span> HawkETL</a>
-                                <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/bianalytics"><span class="material-symbols-outlined text-primary text-sm">dashboard</span> BIAnalytics</a>
-                                <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/edvars"><span class="material-symbols-outlined text-primary text-sm">fact_check</span> EDVARS</a>
+                                
+                                <!-- Mobile Dropdown -->
+                                <div>
+                                    <button onclick="document.getElementById('mobile-products').classList.toggle('hidden'); this.querySelector('.arrow').classList.toggle('rotate-180');" class="w-full flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors">
+                                        <span>Ürünlerimiz</span>
+                                        <span class="arrow material-symbols-outlined text-sm transition-transform duration-300">expand_more</span>
+                                    </button>
+                                    <div id="mobile-products" class="hidden pl-4 space-y-1 mt-1">
+                                        <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/yemvars"><span class="material-symbols-outlined text-primary text-sm">bolt</span> YEMVARS</a>
+                                        <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/hawketl"><span class="material-symbols-outlined text-primary text-sm">conversion_path</span> HawkETL</a>
+                                        <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/bianalytics"><span class="material-symbols-outlined text-primary text-sm">dashboard</span> BIAnalytics</a>
+                                        <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors flex items-center gap-2" href="/urunler/edvars"><span class="material-symbols-outlined text-primary text-sm">fact_check</span> EDVARS</a>
+                                    </div>
+                                </div>
                                 <div class="px-3 py-2 text-[10px] font-black uppercase text-slate-400 dark:text-slate-500 tracking-widest border-t border-slate-100 dark:border-slate-800 mt-2">Daha Fazla</div>
                                 <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors" href="/solutions">Hizmetlerimiz</a>
                                 <a class="p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold transition-colors" href="/blog">Blog</a>
