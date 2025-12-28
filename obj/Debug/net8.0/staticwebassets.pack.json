@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\logo\\airflow.png"
     },
     {
+      "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\edvars_logo.png",
+      "PackagePath": "staticwebassets\\logo\\edvars_logo.png"
+    },
+    {
       "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\hawketl.png",
       "PackagePath": "staticwebassets\\logo\\hawketl.png"
     },
@@ -95,6 +99,26 @@
     {
       "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\kafka.png",
       "PackagePath": "staticwebassets\\logo\\kafka.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_bianalytics_3d.png",
+      "PackagePath": "staticwebassets\\logo\\logo_bianalytics_3d.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_bianalytics_final.png",
+      "PackagePath": "staticwebassets\\logo\\logo_bianalytics_final.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_bianalytics_new.png",
+      "PackagePath": "staticwebassets\\logo\\logo_bianalytics_new.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_edvars_final.png",
+      "PackagePath": "staticwebassets\\logo\\logo_edvars_final.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_edvars_new.png",
+      "PackagePath": "staticwebassets\\logo\\logo_edvars_new.png"
     },
     {
       "Id": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logosuperset.png",
