@@ -1,0 +1,15 @@
+﻿  Geri y├╝klenecek projeler belirleniyor...
+  Geri y├╝kleme i├ğin t├╝m projeler g├╝ncel.
+C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Pages\Shared\_RevizeLayout.cshtml(493,10): error CS0103: 'media' ad─▒ ge├ğerli ba─şlamda yok [C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Sitem.Web.csproj]
+C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Pages\Shared\_RevizeLayout.cshtml(498,10): error CS0103: 'keyframes' ad─▒ ge├ğerli ba─şlamda yok [C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Sitem.Web.csproj]
+C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Pages\Shared\_RevizeLayout.cshtml(508,10): error CS0103: 'media' ad─▒ ge├ğerli ba─şlamda yok [C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Sitem.Web.csproj]
+
+Olu┼şturma BA┼ŞARISIZ OLDU.
+
+C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Pages\Shared\_RevizeLayout.cshtml(493,10): error CS0103: 'media' ad─▒ ge├ğerli ba─şlamda yok [C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Sitem.Web.csproj]
+C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Pages\Shared\_RevizeLayout.cshtml(498,10): error CS0103: 'keyframes' ad─▒ ge├ğerli ba─şlamda yok [C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Sitem.Web.csproj]
+C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Pages\Shared\_RevizeLayout.cshtml(508,10): error CS0103: 'media' ad─▒ ge├ğerli ba─şlamda yok [C:\Users\Furkan\Desktop\antisite\web_sitem_version_1.0.3\Sitem.Web.csproj]
+    0 Uyar─▒
+    3 Hata
+
+Ge├ğen S├╝re 00:00:01.18

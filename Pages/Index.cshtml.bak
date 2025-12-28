@@ -1,0 +1,59 @@
+@page
+@{
+    Layout = "_RevizeLayout";
+    ViewData["Title"] = "Ana Sayfa";
+    var raw = System.IO.File.ReadAllText(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot","templates","index.html"));
+
+    string ExtractMain(string html)
+    {
+        var lower = html.ToLowerInvariant();
+        var segments = new List<string>();
+        var cursor = 0;
+
+        // Collect inner HTML of every <main> block
+        while (true)
+        {
+            var start = lower.IndexOf("<main", cursor);
+            if (start < 0) break;
+
+            var openEnd = html.IndexOf('>', start);
+            if (openEnd < 0) break;
+
+            var end = lower.IndexOf("</main>", openEnd);
+            if (end < 0) break;
+
+            segments.Add(html.Substring(openEnd + 1, end - openEnd - 1));
+            cursor = end + "</main>".Length;
+        }
+
+        // If both desktop and mobile main blocks exist, keep both with visibility helpers
+        if (segments.Count > 1)
+        {
+            var sb = new System.Text.StringBuilder();
+            sb.Append("<style>.desktop-only{display:none !important;} .mobile-only{display:block !important;} @media (min-width:768px){.desktop-only{display:block !important;} .mobile-only{display:none !important;}}</style>");
+            sb.Append("<div class=\"desktop-only\">").Append(segments[0]).Append("</div>");
+            sb.Append("<div class=\"mobile-only\">").Append(segments[1]).Append("</div>");
+            for (var i = 2; i < segments.Count; i++) sb.Append(segments[i]);
+            return sb.ToString();
+        }
+
+        // Single main: behave like before
+        if (segments.Count == 1) return segments[0];
+
+        // No main found: fall back to body content
+        var bodyStart = lower.IndexOf("<body");
+        if (bodyStart >= 0)
+        {
+            bodyStart = html.IndexOf('>', bodyStart);
+            if (bodyStart >= 0) bodyStart += 1;
+            var bodyEnd = lower.IndexOf("</body>", bodyStart >= 0 ? bodyStart : 0);
+            if (bodyEnd > bodyStart) return html.Substring(bodyStart, bodyEnd - bodyStart);
+        }
+
+        return html;
+    }
+
+    var content = ExtractMain(raw);
+}
+
+@Html.Raw(content)

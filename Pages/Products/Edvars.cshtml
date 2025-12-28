@@ -1,0 +1,101 @@
+@page "/urunler/edvars"
+@{
+    Layout = "_RevizeLayout";
+    ViewData["Title"] = "EDVARS - Enerji Veri Doğrulama ve Raporlama Sistemi";
+}
+
+@* Hero Section *@
+<section class="relative w-full overflow-hidden bg-slate-50 dark:bg-slate-900 pt-32 pb-24 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2" data-aos="fade-right">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="w-12 h-0.5 bg-blue-600"></span>
+                    <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Uyum ve Standart</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-black text-slate-900 dark:text-white mb-8 leading-tight">EPDK <br/><span class="text-blue-600">Yönetim Kokpiti</span></h1>
+                <p class="text-xl text-slate-500 dark:text-slate-400 mb-10 leading-relaxed font-medium">
+                    Enerji verilerinizin doğruluğundan asla şüphe etmeyin. EPDK standartlarına %100 uyumlu, şirketler arası (EDAŞ-EDAŞ) kıyaslama ve raporlama platformu.
+                </p>
+                <ul class="space-y-4 mb-10 text-slate-600 dark:text-slate-300">
+                    <li class="flex items-center gap-3 font-semibold"><span class="material-symbols-outlined text-green-500">check_circle</span> EPDK Tablo 1-5-8 Otomasyonu</li>
+                    <li class="flex items-center gap-3 font-semibold"><span class="material-symbols-outlined text-green-500">check_circle</span> Otomatik Veri Tutarlılık Kontrolü</li>
+                    <li class="flex items-center gap-3 font-semibold"><span class="material-symbols-outlined text-green-500">check_circle</span> Geçmişe Dönük Kayıp Veri Tamamlama</li>
+                </ul>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('demoLauncher').click()" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20">Sunumu İzleyin</button>
+                    <a href="/Contact" class="px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white font-bold rounded-2xl hover:bg-slate-100 transition-all">Bizimle İletişime Geçin</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 relative" data-aos="fade-left">
+                <div class="absolute inset-0 bg-blue-600/5 blur-[120px] rounded-full"></div>
+                <div class="relative grid grid-cols-2 gap-4">
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-sm border border-slate-100 dark:border-slate-700 text-center transform translate-y-8">
+                        <span class="material-symbols-outlined text-4xl text-blue-600 mb-4">verified</span>
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">100%</div>
+                        <div class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-2">EPDK Uyum</div>
+                    </div>
+                    <div class="bg-blue-600 p-8 rounded-[2.5rem] shadow-xl text-center text-white">
+                        <span class="material-symbols-outlined text-4xl mb-4">speed</span>
+                        <div class="text-3xl font-black">X10</div>
+                        <div class="text-[10px] text-blue-100 font-bold uppercase tracking-widest mt-2">Raporlama Hızı</div>
+                    </div>
+                    <div class="bg-slate-900 dark:bg-white p-8 rounded-[2.5rem] shadow-sm text-center text-white dark:text-slate-900 transform translate-y-8">
+                         <span class="material-symbols-outlined text-4xl mb-4">security</span>
+                        <div class="text-3xl font-black">Sıfır</div>
+                        <div class="text-[10px] opacity-60 font-bold uppercase tracking-widest mt-2">Manuel Hata</div>
+                    </div>
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-sm border border-slate-100 dark:border-slate-700 text-center">
+                        <span class="material-symbols-outlined text-4xl text-indigo-500 mb-4">history</span>
+                        <div class="text-3xl font-black">7/24</div>
+                        <div class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-2">Denetim Hazır</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@* Dashboard Categories *@
+<section class="py-24 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Uzmanlık Alanlarımız</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">EPDK ve Üst Yönetim için özelleştirilmiş karar destek dashboard grupları.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="0">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">trending_up</span>
+                <div class="font-bold text-slate-900 dark:text-white">Performans</div>
+            </div>
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="100">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">humidity_low</span>
+                <div class="font-bold text-slate-900 dark:text-white">Kayıp - Kaçak</div>
+            </div>
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="200">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">account_balance</span>
+                <div class="font-bold text-slate-900 dark:text-white">Yatırım</div>
+            </div>
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="300">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">bolt</span>
+                <div class="font-bold text-slate-900 dark:text-white">Tüketim</div>
+            </div>
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="400">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">error</span>
+                <div class="font-bold text-slate-900 dark:text-white">Arıza - Kesinti</div>
+            </div>
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="500">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">settings_input_antenna</span>
+                <div class="font-bold text-slate-900 dark:text-white">OSOS</div>
+            </div>
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="600">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">electric_meter</span>
+                <div class="font-bold text-slate-900 dark:text-white">Sayaç</div>
+            </div>
+            <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 text-center hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="700">
+                <span class="material-symbols-outlined text-3xl text-blue-600 mb-2">map</span>
+                <div class="font-bold text-slate-900 dark:text-white">CBS Entegrasyonu</div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,50 @@
+[
+    {
+        "Id": "1",
+        "Title": "Oracle'dan Açık Kaynağa: $12.9M Lisans Tasarrufu Yolculuğu",
+        "Slug": "oracle-dan-acik-kaynaga-tasarruf-yolculugu",
+        "Summary": "Oracle bağımlılığından kurtularak 5 ayda ROI sağlayan devasa veritabanı göçü projemizin teknik detayları ve maliyet analizi.",
+        "Content": "<h2>Finansal Dönüşümün Hikayesi</h2><p>Enerji sektöründe Oracle Enterprise, Golden Gate ve Partitioning gibi yüksek maliyetli lisanslardan açık kaynaklı PostgreSQL ve Clickhouse mimarisine geçiş yaparak 12.9 Milyon USD tasarruf sağladık.</p><h3>Teknik Başarılar</h3><ul><li>2134+ Tablonun sorunsuz göçü</li><li>45TB Veritabanı boyutu yönetimi</li><li>Günlük 980+ veri paketi akışı</li><li>%30 Performans kazanımı</li></ul>",
+        "Category": "Başarı Hikayeleri",
+        "Author": "Mimari Ekibi",
+        "PublishDate": "2024-01-10T10:00:00",
+        "ImageUrl": "/images/blog/migration.png",
+        "ViewCount": 3450
+    },
+    {
+        "Id": "2",
+        "Title": "AI Destekli Trafo Yangını ve Arıza Tespit Sistemi",
+        "Slug": "ai-destekli-trafo-izleme",
+        "Summary": "Derin öğrenme algoritmaları ile trafolardaki aşırı yüklenme ve dengesizlik durumlarını önceden tespit ederek yangın riskini minimize ediyoruz.",
+        "Content": "<h2>Büyük Veri ve Yapay Zeka ile Güvenlik</h2><p>Görüntü işleme ve sensör verilerini birleştirerek trafolardaki anormallikleri anlık olarak analiz ediyoruz. Sistemimiz, SEYT dengesizliğini tespit edip otomatik iş emri üretebilmektedir.</p><h3>Öne Çıkan Modüller</h3><ul><li>Termal görüntü analizi</li><li>Akım/Gerilim dengesizlik takibi</li><li>Otomatik İş Emri Üretimi</li><li>Erken Uyarı Bildirimleri</li></ul>",
+        "Category": "Yapay Zeka",
+        "Author": "AI Ekibi",
+        "PublishDate": "2024-01-15T14:30:00",
+        "ImageUrl": "/images/blog/trafo_ai.png",
+        "ViewCount": 1820
+    },
+    {
+        "Id": "3",
+        "Title": "Enerji Sektöründe Tahakkuk ve Tahsilat Tahminlemesi",
+        "Slug": "enerji-tahsilat-tahminleme-ai",
+        "Summary": "Müşteri ödeme alışkanlıkları ve fatura trendlerini analiz ederek nakit akışını %95 doğrulukla tahminleyen yapay zeka modelimiz.",
+        "Content": "<h2>Veriye Dayalı Nakit Yönetimi</h2><p>Mesken ve mesken dışı abonelerin geçmiş fatura ve ödeme verilerini kullanarak il, ilçe ve abone bazlı KWh tahminleri gerçekleştiriyoruz.</p><h3>Kazanımlar</h3><ul><li>%95+ Tahmin doğruluğu</li><li>Kayıp-Kaçak ihtimal analizi</li><li>Müşteri değer segmentasyonu</li><li>Bütçe planlama optimizasyonu</li></ul>",
+        "Category": "Veri Analitiği",
+        "Author": "Veri Analitiği Ekibi",
+        "PublishDate": "2024-02-01T11:20:00",
+        "ImageUrl": "/images/blog/finance_ai.png",
+        "ViewCount": 2100
+    },
+    {
+        "Id": "4",
+        "Title": "BIAnalytics: 100 Kat Daha Hızlı Veri Sorgulama",
+        "Slug": "bianalytics-hiz-rekoru",
+        "Summary": "Milyarlarca satırlık veride saniyeler içinde filtreleme yapmanıza olanak tanıyan yeni nesil BI motorumuzun mimarisi.",
+        "Content": "<h2>Hızın Hikayesi</h2><p>Geleneksel BI araçlarının dakikalarca beklettiği sorguları BIAnalytics ile milisaniyeler seviyesine indirdik. 70.000 satırlık CSV dışa aktarım süresini 14.678 saniyeden sadece 6 saniyeye düşürdük.</p><h3>Rakamlarla BIAnalytics</h3><ul><li>100x Filtreleme hızı artışı</li><li>8x Dışa aktarım hızı</li><li>2x Dashboard açılış hızı</li><li>Sınırsız CSV üretim kapasitesi</li></ul>",
+        "Category": "Ürün Geliştirme",
+        "Author": "Ürün Ekibi",
+        "PublishDate": "2024-02-15T09:45:00",
+        "ImageUrl": "/images/blog/bianalytics_benchmark.png",
+        "ViewCount": 2800
+    }
+]

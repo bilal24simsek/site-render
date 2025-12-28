@@ -1,0 +1,19 @@
+﻿
+InterfaceAlias               
+--------------               
+Ethernet 4                   
+Ethernet 3                   
+Bluetooth Ağ Bağlantısı      
+VMware Network Adapter VMnet8
+VMware Network Adapter VMnet1
+Yerel Ağ Bağlantısı* 2       
+Ethernet 2                   
+Yerel Ağ Bağlantısı* 1       
+OpenVPN Connect DCO Adapter  
+Ethernet                     
+Wi-Fi                        
+Yerel Ağ Bağlantısı          
+Loopback Pseudo-Interface 1  
+
+
+

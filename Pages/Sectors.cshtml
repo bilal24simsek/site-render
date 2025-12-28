@@ -1,0 +1,156 @@
+﻿@page "/sectors"
+@{
+    Layout = "_RevizeLayout";
+    ViewData["Title"] = "Referanslar";
+}
+
+@* Hero Section *@
+<section class="relative w-full mb-16 lg:mb-24">
+    <div class="hero-wrapper relative w-full h-[500px] lg:h-[600px] overflow-hidden border-b border-slate-200 dark:border-white/5 bg-slate-900">
+         <div id="particles-js-sectors" class="absolute inset-0 z-20 pointer-events-none mix-blend-screen"></div>
+        <div class="hero-slide active h-full w-full absolute inset-0 flex items-center justify-center text-center px-4">
+             <div class="hero-bg absolute inset-0 bg-cover bg-center z-0" style="background-image: linear-gradient(135deg, rgba(10,16,32,0.85), rgba(13,31,74,0.75)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80');"></div>
+             <div class="hero-content relative z-10 max-w-5xl mx-auto space-y-6 md:space-y-8">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-blue-500/20 text-blue-200 text-xs md:text-sm font-bold tracking-wider uppercase backdrop-blur-sm border border-blue-500/30">Referanslar</span>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-[1.1] tracking-tight">Sektörlere Değer<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 animate-text-shimmer">Katıyoruz</span></h1>
+                <p class="text-slate-300 text-lg md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed">Büyük veri çözümleriyle sektör liderlerine nasıl güç kattığımızı keşfedin.</p>
+             </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        if(window.particlesJS) {
+            particlesJS('particles-js-sectors', {
+              "particles": { "number": { "value": 30, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle" }, "opacity": { "value": 0.2, "random": false }, "size": { "value": 2, "random": false }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.1, "width": 1 }, "move": { "enable": true, "speed": 0.4, "direction": "right", "random": false, "straight": false, "out_mode": "out", "bounce": false } },
+              "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false }, "onclick": { "enable": false }, "resize": true } },
+              "retina_detect": true
+            });
+        }
+    </script>
+}
+
+<div class="px-4 md:px-10 py-16 md:py-24 max-w-7xl mx-auto space-y-16">
+
+    <!-- Sectors -->
+    <section>
+        <h2 class="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold leading-tight mb-8">Sektörel Uzmanlık Alanlarımız</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="flex flex-col gap-4 p-6 rounded-2xl bg-primary/5 dark:bg-primary/10 border border-primary/20 hover:-translate-y-1 transition-transform duration-300">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/30">
+                    <span class="material-symbols-outlined text-3xl">bolt</span>
+                </div>
+                <div>
+                    <h3 class="text-slate-900 dark:text-white text-lg font-bold">Enerji Sektörü</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">DEDAŞ ve EPDK uyumlu, yenilikçi büyük veri ve raporlama çözümleri.</p>
+                </div>
+            </div>
+            
+             <div class="flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-primary">
+                    <span class="material-symbols-outlined text-3xl">account_balance</span>
+                </div>
+                <div>
+                    <h3 class="text-slate-900 dark:text-white text-lg font-bold">Finans</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">Güvenli ve performanslı ETL ve veri ambarı projeleri.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-primary">
+                    <span class="material-symbols-outlined text-3xl">wifi_tethering</span>
+                </div>
+                <div>
+                    <h3 class="text-slate-900 dark:text-white text-lg font-bold">Telekomünikasyon</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">Büyük veri analitiği ve müşteri içgörü platformları.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-primary">
+                    <span class="material-symbols-outlined text-3xl">shopping_cart</span>
+                </div>
+                <div>
+                    <h3 class="text-slate-900 dark:text-white text-lg font-bold">Perakende</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">Stok optimizasyonu ve talep tahminleme çözümleri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <h2 class="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold leading-tight mb-8">Öne Çıkan Projeler</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all duration-300">
+                <div class="h-64 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAlAX3z3pAE0CZ2OagCfqlJ8WJBl627bgaQfDqhtGMOk6sVe08ylH7VcVqyeeGi8pPCSwuw6i6LKsOs-EZjD5VDgBXMFd0SyT5u_zGvN62lGETLK2MgKluOAo5b707cOSbzsS2-fHdJmzGeTY-LCw235dBnjLR81pgLZVMar7V3-fyABKW0__4QRGyPWkC36zO_dwz2q_qUJ9gUP6m9NDjXLq2YSo4ZKEvPsJheMz76skdyQOUyshKpm4dhEPVukDE8kGA6LvqoX1P');"></div>
+                <div class="p-8 relative">
+                    <div class="absolute top-0 right-0 p-4 -mt-12 mr-4 bg-white dark:bg-slate-800 rounded-xl shadow-lg">
+                         <img class="w-12 h-12 rounded-lg object-contain" src="/logo/dedas.png" alt="DEDAŞ Logo" onerror="this.src='https://placehold.co/48x48?text=D'"/>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">DEDAŞ - Veri Ambarı Modernizasyonu</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">Enerji dağıtım verilerinin merkezileştirilmesi, ETL süreçlerinin optimizasyonu ve anlık raporlama altyapısının kurulması.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-bold bg-blue-100 dark:bg-blue-900/30 text-primary py-1.5 px-3 rounded-full">Büyük Veri</span>
+                        <span class="text-xs font-bold bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 py-1.5 px-3 rounded-full">ETL</span>
+                        <span class="text-xs font-bold bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 py-1.5 px-3 rounded-full">Veri Ambarı</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group rounded-2xl overflow-hidden bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all duration-300">
+                <div class="h-64 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeQyNJt2JXTCMxzkc5eCKzhoHIdu_adEDekZwdd-Kn6A3SiEVi_Dzp06j1XNo8_cuiGVXwIsTI_aokI7eYqL6FH1A_QYxJxHSVpw48MK6y5wI7mOvz1wXVMqIKliHSh3zWTMYMKqcsP1iY1WaCBKZX480YCxJEGes_sY3-BR3VYsXs5Qal3IbX00xvTz_CYT5s3EDHLUXGYlLake01bQqWvOBOPEAckFJc6cDLHAsrVbdOf2Eik7WuA2WxCx8qSt2QBdZxYTUcCTqK');"></div>
+                <div class="p-8 relative">
+                     <div class="absolute top-0 right-0 p-4 -mt-12 mr-4 bg-white dark:bg-slate-800 rounded-xl shadow-lg">
+                         <img class="w-12 h-12 rounded-lg object-contain" src="/logo/epdk.png" alt="EPDK Logo" onerror="this.src='https://placehold.co/48x48?text=E'"/>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">EPDK Uyumlu Raporlama Altyapısı</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">Enerji Piyasası Düzenleme Kurumu standartlarına uygun, otomatize edilmiş ve güvenilir raporlama platformunun geliştirilmesi.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-bold bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 py-1.5 px-3 rounded-full">Raporlama</span>
+                        <span class="text-xs font-bold bg-cyan-100 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 py-1.5 px-3 rounded-full">Veri Mühendisliği</span>
+                        <span class="text-xs font-bold bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 py-1.5 px-3 rounded-full">Regülasyon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <h2 class="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold leading-tight mb-8">Müşteri Görüşleri</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm relative">
+                <span class="material-symbols-outlined text-6xl text-slate-200 dark:text-slate-800 absolute top-4 right-4 rotate-12 select-none">format_quote</span>
+                <p class="text-slate-600 dark:text-slate-300 text-lg relative z-10">“Veri ambarı projemizdeki uzmanlıkları ve profesyonel yaklaşımları sayesinde operasyonel verimliliğimizde %30'un üzerinde artış sağladık. Süreç boyunca gösterdikleri destek paha biçilmezdi.”</p>
+                <div class="flex items-center gap-4 mt-8 relative z-10">
+                    <img class="h-12 w-12 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXIYEZQSBXhCstRnS4dE0hfy0TVqpvsWqhjxgMx3rDclFcZZxCH4dYkjcdQaWf4R-7FerURa7PMTyg74xGFw3FXjVJUpk2F2ZrutL2jjHOmE62XPFzfR_l8vGZFKVeyoOWIPHdZGAZIn0OvjFsMCUvt3hx1_ggVxt0UQFQm9O28TvQjj616fSMVdD9xuFMo8lHK4hOrIg0-1XGAfB4aa0LaMCRdWpZIKH42KKiVin5twTS4ZTNlu2JSNbHB6LwtTP1z8CYhKx-nYh3" alt="Ayşe Yılmaz"/>
+                    <div>
+                        <p class="font-bold text-slate-900 dark:text-white">Ayşe Yılmaz</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Enerji A.Ş. - BT Direktörü</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-slate-900/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm relative">
+                 <span class="material-symbols-outlined text-6xl text-slate-200 dark:text-slate-800 absolute top-4 right-4 rotate-12 select-none">format_quote</span>
+                <p class="text-slate-600 dark:text-slate-300 text-lg relative z-10">“Finansal verilerimizin ETL süreçlerini yeniden tasarlayarak raporlama süremizi yarıya indirdiler. Veri güvenliği konusundaki hassasiyetleri ve teknik bilgileri sayesinde artık daha güvendeyiz.”</p>
+                <div class="flex items-center gap-4 mt-8 relative z-10">
+                    <img class="h-12 w-12 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWTuxfQIsWf5TFAW0BGWzjyB0c3OHs4-euYVDPFVHGCHRPqzSe_0RIHczBffmvO1zUDLeom42SKlFdsBPD5N9xkABDNcBNN9LqECTH-N1WXQ63P5VUUX4vihiP5FJauxLRjIWoz2xklezhlqglDurxdyhh31ly7TWpGOOAWdaHSerL6lost73DFEmthZg3UK4VJNhSyFmUc7qrRvQBrv0-B3-bN2c3FMrMEPlHLzWXoerhhJjJOz-sB1Uvy5L2tafPfAd54sXf6PiW" alt="Mehmet Kaya"/>
+                    <div>
+                        <p class="font-bold text-slate-900 dark:text-white">Mehmet Kaya</p>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">FinansBank - Veri Analitiği Müdürü</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="rounded-3xl bg-primary/10 dark:bg-primary/20 border border-primary/20 p-8 md:p-12 text-center max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Kendi Başarı Hikayenizi Yazmaya Hazır Mısınız?</h2>
+        <p class="text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">Veri potansiyelinizi ortaya çıkarmak ve işinizi bir sonraki seviyeye taşımak için uzman ekibimizle tanışın. Projenizi görüşmek için bize ulaşın.</p>
+        <a href="/contact" class="inline-flex items-center justify-center h-12 px-8 rounded-xl bg-primary text-white font-bold transition-all hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5">Bize Ulaşın</a>
+    </div>
+</div>

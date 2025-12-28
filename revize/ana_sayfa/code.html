@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ana Sayfa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0b5eda",
+              "background-light": "#f5f7f8",
+              "background-dark": "#101722",
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex justify-center px-4 sm:px-8 lg:px-10">
+<div class="flex w-full max-w-7xl items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-50">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight tracking-[-0.015em]">DataCorp</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="/solutions">Hizmetlerimiz</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="/solutions">Çözümlerimiz</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="/hakkimizda">Hakkımızda</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="/contact">İletişim</a>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" href="/contact">
+<span class="truncate">Bize Ulaşın</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="px-4 sm:px-8 lg:px-10 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1 gap-12 sm:gap-16 lg:gap-20">
+<section class="py-10 md:py-20 text-center">
+<div class="flex flex-col items-center gap-6">
+<h1 class="text-slate-900 dark:text-slate-50 text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-6xl max-w-3xl">Veri Mühendisliğinde Güvenilir Çözüm Ortağınız</h1>
+<h2 class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal md:text-lg max-w-2xl">ETL süreçleri, büyük veri platformları ve analitik çözümlerle işletmenizin veri potansiyelini en üst düzeye çıkarıyoruz.</h2>
+<button class="mt-4 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Teklif Alın</span>
+</button>
+<div class="mt-8 w-full rounded-xl" data-alt="Abstract animation of flowing data streams and nodes">
+<img alt="Abstract data visualization with charts and graphs" class="w-full h-auto object-cover rounded-xl shadow-2xl shadow-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiB8WqrmchCZIUgajeLd24NhUmOief43RyXydY3-l4CXqd1qYDX9K0n5tjkQO1t9KrJXNnMtvnKLb9r8LTZhcKeVeU_oAyCVD3NrWgEQlp_aQn47EDKAZyx6Xgn92BOQJK8y9lXAJpRg4mijGpmuUeXLI4BVQK9cbBxTWkbjO9v3kjQDV7QmdYxXfi3nfzhyMN_g4Sym1aqH49iBrZKrk_V9XV15H4Af8NK_Kg632K0rZ4x5ur1gxruZZiukmQE7V5x0XMfPz1_Lmw"/>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-10 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-slate-900 dark:text-slate-50 text-[32px] font-bold leading-tight tracking-[-0.033em] @[480px]:text-4xl @[480px]:font-black max-w-2xl">Modern ve Ölçeklenebilir Çözümlerimiz</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl">Sunduğumuz modern ve ölçeklenebilir veri platformu çözümleriyle işinizi geleceğe taşıyın.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-slate-200 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Apache Superset logo on an abstract background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfIeBCkptXnTZapLrpq1v5JDlOP9BtwX5BNUP2vkCaDaH6yOQ1uw3nasfPIUOGIeICwtpcPZpxiZt62FqJ3DZsdWqIDrcfXQO3Bib4SX6-Fs_qHc2vx2Gu5AzT9CDSbb_LAZ8bprQZEW0dQZjNLdhx5wpn4nrnTA8ua1bm1OMvqzjLJyojKni8LRthoEaU93HDZdFN9uhLdRwL_gs8k-ZEktrZ11J6fENZTpvA9yJ5-_VNYyJB7w0QJ4pz6feKt_RH39iFI8Uw4N5R");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal">Apache Superset</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Modern veri keşfi ve görselleştirme platformu.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-slate-200 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Hawk-ETL logo on a technical blueprint background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGlQ-ya0tUs2mn4zpPowRsHLudXGH0wlejwarSaf3sy9qZXTiCk6mlhOF4y1j0vP4RWlxgfJQHXOwZXorCgoU_hbs8f1TJla3W37KGCO14x-dCT5L4qjkHU4qxeom2G743Sw3o-9N65ICR5AoYrn9nLFbx52dU1FiVlTV01gPvG6WeN2QlrchcKZh-ptlpyfR07hysWR9UoGoQ9I1_2Lnh268pF5lJF2Pa3KXjcACKAfGouF7UUdPyO4GjNoFRLExA_mvNtvtF_-Jh");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal">Hawk-ETL</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Yüksek performanslı ve esnek ETL aracı.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-slate-200 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Apache Airflow logo with orchestrated data pipelines" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcOcwgxIA0G8x2ERNR-YqqCJU8UEINrmoARItrH7Y37iSdSiALwn2CKVHbw3XvBLg8mRV71NmOY0NhXqgheZzkTrPaTQ0wbilHgY6-VcNOVqAqf1wJFxZUYHxg5EOmDrAg3q16KUtJpPM8Do6oaTS_ngGfY-Bk6aED-rJa82GL4rX5825Dpt9iYJ9CQv2hUXPh7qNwuTeCqJLJ_J1RL1SDHtuOEaKGpOsIZ9qAITk9It7ZBJsn54xnrzj9qy8-dYYa98PGzmweUoXe");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal">Apache Airflow</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">İş akışlarını programlı olarak yazmak, zamanlamak ve izlemek için platform.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-slate-200 dark:bg-slate-800 bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Kafka and Debezium logos with streaming data visualization" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDb0ZOMkBZnU0KXBhPTLTp9JSd8e1hASaeloZ137sg70na_oiKwQJCNxlweb9TricVkSrsK9ayhab5wzPO0nvr6rItPY5guuY7UbFfTUsZs7kFeVM-iY-MVT1WMyFfWeB_u-uqUuvB0SfQU65-h1djjT5z52iDhdisHJe4o3KA15gOJM8syS9H0lD1FJm2GpykwD6GvrO_K10PLSzzv6f_9QNDcQzMMYRswlAFbRovSuRsNMxUABuFTDU2mA-YcZdt7UreSU_OX3qm4");'></div>
+<div>
+<p class="text-slate-900 dark:text-slate-50 text-base font-medium leading-normal">Kafka-Debezium CDC Platformu</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Değişiklik Veri Yakalama (CDC) için dağıtılmış akış platformu.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-10 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-slate-900 dark:text-slate-50 text-[32px] font-bold leading-tight tracking-[-0.033em] @[480px]:text-4xl @[480px]:font-black max-w-2xl">Bizi Neden Tercih Etmelisiniz?</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl">İşletmenize değer katan temel prensiplerimizle fark yaratıyoruz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-0">
+<div class="flex flex-1 gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 flex-col items-start text-left">
+<div class="text-primary bg-primary/10 rounded-full p-3">
+<span class="material-symbols-outlined !text-3xl">groups</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">Uzman Ekip</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Alanında deneyimli mühendislerimizle projenize özel, en verimli çözümleri üretiyoruz.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 flex-col items-start text-left">
+<div class="text-primary bg-primary/10 rounded-full p-3">
+<span class="material-symbols-outlined !text-3xl">memory</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">Yenilikçi Teknoloji</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">En güncel ve güvenilir açık kaynak teknolojileri kullanarak esnek ve ölçeklenebilir altyapılar kuruyoruz.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 flex-col items-start text-left">
+<div class="text-primary bg-primary/10 rounded-full p-3">
+<span class="material-symbols-outlined !text-3xl">sync_alt</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">Uçtan Uca Çözümler</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Veri stratejisinden analitik raporlamaya kadar tüm veri yolculuğu süreçlerinde yanınızdayız.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-8 text-center">
+<h2 class="text-slate-900 dark:text-slate-50 text-[22px] font-bold leading-tight tracking-[-0.015em]">Bize Güvenenler</h2>
+<div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+<ul aria-hidden="true" class="flex items-center justify-center md:justify-start [&amp;_li]:mx-8 [&amp;_img]:max-w-none animate-infinite-scroll">
+<li><img data-alt="Client logo one" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUPhuEgL1VykXWTnaCIStZiUnivr51f4PaX_xDvWs3SoQrZlesL6AlCf8j1cdGTKrao_8q19pZcgdffcWGhPqarQ8xdCEeUj2qGsIn9MvuIEOVDAed_to8jFT8PJRi-MsBpKqLcPmHGkDCvgZJQ6Uk0GWRoHsxq9oPnghmTf_RipcBAyb9LufNRZVJFqr86HAPQD_lqaXiUgLC0L_3OdLmq3x4C8vuLZZFWr_iI19fB5MskMyAGX0Rsk9L-zImltR5eMinLYczuQqQ"/></li>
+<li><img data-alt="Client logo two" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlKib8XO5Qs1gkFsELtijO4qUR7Kcmmo0yCmYjFIhSjzi-luNDSyyTq0MWyr7Xps7ezQZmeA-7X3GXNBJXKpB9jVtINxwGPhHCZMOgx7i7ABMljyxuzIUBwiNYqx5G8s5oxibepRjByyAqzxk5_sgDu5HrYRvRvgkUut2CtAwbsB2VJ736I78yA9IR--ZEcRhEplTb_0xegXwdHAEColMB_svAaCVWMpL1fQbA5K0wOMWdLVWvHPr7xT820t2wc1JWg_VTy4kqAL3B"/></li>
+<li><img data-alt="Client logo three" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAft93tkV5TPL7UHkBNSvgojb-zgJmjtErGhS6cfbEwOcDftwvNJTJZDzfmDtoSG_pHrdjnBR7LbyYw5mjNcp8Ax83dMNKL3itTY6ILawMRVLb66r9gi1C9bhVL5QzFrSLcLJ-Js1HPyMTSdAXYdgzGlZ5TrmO3ApWdw1UDDAOvh_pOrnUwCcZTse2kXar3DPZG8wpDm7zGnqvsrIMPlgCWbjnAUrmA_y6i_MnKcCadYvD6fJAo0zkrdhoMw4aM_Uc9Gnn_wYCg2hsU"/></li>
+<li><img data-alt="Client logo four" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrvP3_GZi1rMkeInFobodz7lgu5JAbgk4lMrd8K4SggSHe6bZnzlTVi3e7oW-ISbVk9Fx5O-PXKbLdNTE0MbUo801mqsiMTf2OQBqQT4mM0r5rCTdoOarhcJTlE6Xm1VN6iH7i0I00r0z2gywRWIMTJWM7_OHkwC_UTU_i0Hm-uGeUMxTsj3Nz1O4ksTh6vxkpkB9By8j_IR7go-C68SYKX9lRyyCo8TC3n6BMAA8mQbW-kaehtCpsA9qeAJSbf8nT2mdrza4RiTdF"/></li>
+<li><img data-alt="Client logo five" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIv0F9qSuXOWiBlYHPvnlJzK5MkqMjTp_1zwDWsFLV1WnFYxQIuWkK8EFb-sWRfYnv6RkIeGOgIuF7ZW1lUneNs3yP2Be0VNvNA656rnZyjwiGcWHRT1_q7XZ4jZ2xIFb8fTx9ylHCLO_jBMiZV3NwPFPcTWq7vaZKZaPu4yGQ6mFN5Y4k1d2CFzkBJmlLRJCc-9wJKoEvOwMUtEJGGqUNjqeznADtmxynqGkhUoWnf559BL2CDSehWh0xu5Ml5ub1PonpC3TZjl4K"/></li>
+<li><img data-alt="Client logo six" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd8JvO_V3QjMOhAcwIYa8yCCTErbDDY-BBO5BMjceAzmUPxFjixpGxUbaJwzX4aNYaJLmMYMmQW_41lK2PCDcZDtG_-qo4z4aLCn_p4-QKIA9IpxOBMKsQk05aP4wk0F_TQFhMw9P0OXIaBEMDkDXWJMS8M7dUPNiTy_LDo3B2OGo5ftZyAf8kxkeEGnJ78lHlzL3u8fP7JgBrY4WIJXGrV50DahgvNQklvua5mV0LTK66XjpC1BapfS8rS7RtnlTaCUBEVHXbpBO-"/></li>
+</ul>
+<ul aria-hidden="true" class="flex items-center justify-center md:justify-start [&amp;_li]:mx-8 [&amp;_img]:max-w-none animate-infinite-scroll">
+<li><img data-alt="Client logo one" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2_eR4vblIO1y0wFIqHc02OdhmadVCL97cCtJaZQWPVP4MKduHh66ArlLFkQkmoHN196mqTF2bCp139hQJ2ye3irSeqeiFgi49ihCVUW-ZEBgl2LJFQUvgXA4W33KQXHj0DPEo56jc-mwMEYDmp5_UziWZPW4DICy00U3OA6F7VJ-p20Zn97mnxUHxQISAtzD8tbNVjBo37jxh_eiFUB2YlclEOYfrr8HHodUO-_Fbzb831TfFm1zQnBYyD2FKRhol9EV4adaRCJfB"/></li>
+<li><img data-alt="Client logo two" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxlVovSbKm24AiY6uBiH2klHFytCCGJnH95oR-j_hT8Jvv5jjzUjXSlFowjXi6PHBSxp1bXNQt8yH0VdSSLS2G3Zjse560vrx5tWIB-yBofc6mZj2kT6n0IOF55SyQ3PdNaZUJh3oh5v1Boqm1c2SvlwFsjksbd4Hc7a7S6dLpZ2w9a4Xwowi3boQQug2H9nC39yH2sr_Gqzo5KtagGwdNdw7DmEkjx4Zw1N4_C4yodfquBFFLPfExZs-JnbFtRu20l9iX7Yrdc9m_"/></li>
+<li><img data-alt="Client logo three" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRZp8IYChBPfRVBgeEfkmQlXTAdfFuRSr4XF-3axr4wPtTjb-VNH8h3uj9SIy09vg3CZ_rwFIsH1KY_qcjQA4ICiy3KTrrB1WJ4wjN2aUZAuAZokf_CJJuMccIkcJx7GCB4FDY_OaNewd6EyrNJsi2PVTfx5Cv7Wc54qZHBhpaKOEpqwKB55gtxznv8Ex4u4XNJ4yA8qtqTAlRHsV1F7klVNi4stEVLiifE8lnli369bTH6Q3UesXunt5YEeuUAV7NopWIxsxH933g"/></li>
+<li><img data-alt="Client logo four" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5SZdY0GzgJ1FcdTZJ0Qtwaro46gWn39nJU-hA9UJkFVSH5cpnwFA9wTX59k17R7IYBrhl_DQ0kihaRLaCmnGYJliZeLk10fqqEAhuwM4aCxxrYgpzJrD1XwLa7ZqSZqBINFSMlO_P2hvUMkdGz9sbR1kuX2jsk9QFH7YIZppNRImkrqTjt4X8Rr5vB2kZ6a6kWglKWYGTRgC1PyMWQJT7AsrClaCh_tmy7z5uq4LzhM7vIKkJq5YIQTBLs2RtS3kzbVirOQSCzVzd"/></li>
+<li><img data-alt="Client logo five" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAESefAf_m1UFxiRYFbUwPy43ue3L-YGaJ0j6R0ylCYBbnnVZggvndvnh7jG-5CZsz7ESLEDnrw97tboWMLaTE8FyGtHxYmKgzsupHeWWuSYCkuz1MbnTbJhO0bc6WwH4a5wnhd4KLKeFlm_39zVGtpkhYqxZdwpmUmyOG9XglIQSQLEOHmrzJqyFNt3-IEEGchB0sfwN71VrHyhv90EkKuPzClotqX24MNnvtAcgtRuLc7CZH6ABFfq65JcobLzH5NlhTa5zyH8M6o"/></li>
+<li><img data-alt="Client logo six" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMsffXpoZwSQzFGxb9tcvrBbuwim03xndzpVl-DsNCrclIj64lBHnIZBxY6SDSyJHtvZsVoUNx15M0NTVsIV988IaAq4zPXhHPV1t4Grsatd99ce5AKBxyoBaodoNQARM-_8izoJcqUpXiI18186UKaEWqKWLRgUhPFLX1qI_EgMWcRV6xJj_CC_AupODbIe9BSmh6EcEXy0xMhcGTtLrqMtvv89Pplk2sumwLY7XKvp_P8lNzaMT-hWYKXOhgfKMrhAFubdeXPKgJ"/></li>
+</ul>
+</div>
+</section>
+<section>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold">ENERJİ SEKTÖRÜNDEKİ UZMANLIĞIMIZ</span>
+<h3 class="text-slate-900 dark:text-slate-50 text-2xl font-bold leading-tight tracking-[-0.015em]">Enerji Piyasaları için Veri Çözümleri</h3>
+<p class="text-slate-600 dark:text-slate-400">EPİAŞ ve TEİAŞ gibi kurumlardan alınan verileri işleyerek, enerji piyasası katılımcılarına yönelik özel raporlama ve analiz çözümleri sunuyoruz.</p>
+</div>
+<div class="rounded-lg bg-slate-100 dark:bg-slate-900 p-6 flex flex-col gap-4">
+<h4 class="text-slate-900 dark:text-slate-50 font-bold">Öne Çıkanlar</h4>
+<ul class="flex flex-col gap-2">
+<li class="flex items-center gap-2 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Gerçek zamanlı piyasa takası fiyatı (PTF) analizi</span>
+</li>
+<li class="flex items-center gap-2 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Üretim ve tüketim tahmin modellemeleri</span>
+</li>
+<li class="flex items-center gap-2 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Dengesizlik maliyeti optimizasyonu</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-10">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-slate-900 dark:text-slate-50 text-[32px] font-bold leading-tight tracking-[-0.033em] @[480px]:text-4xl @[480px]:font-black max-w-2xl">Blogdan Son Yazılar</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl">Veri dünyasındaki son gelişmeleri ve uzman görüşlerimizi takip edin.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOyZWMGWJwoLrry0DKGuNi1hdWIzpbi0w2fuxCVt_e1a3VbyaUjPtjG9DCcYHPwY7wB5sGLHpllydW0xE_iU9e32W_9HZc7seiGXHqoUabqDQNGVXy3t0f5D6_KKwjxofHjEe93ChTU9rbPEG6Z4uzqIqV-Ou080OF0bHYoYtoPo0-VbX68A5wCW3lrWsoVP2J8ZaiVHhBoNW2ZxX2zHWURsyjRhnwDYqISHVyX4BIU5OxHJNfKzzYXD3sGPgbDwkwA6SOQsfeDaUk')"></div>
+<div class="flex flex-col gap-1">
+<span class="text-sm text-slate-500 dark:text-slate-400">VERİ MÜHENDİSLİĞİ • 5 DAKİKA OKUMA</span>
+<h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">ETL Süreçlerinde Debezium ile CDC Kullanımı</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Veritabanı değişikliklerini anlık olarak yakalayarak veri ambarınızı nasıl güncel tutabileceğinizi keşfedin.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5IwcT8VyTRDkT1BwkgEaTxqxOUvMcSBRez2Grgl6ESu8kUS4gcjIH120TR9Bff068BUShL-TilBL8GFzKUPLhI9Ym5hHArN8v7YJV2URBz2kT9Zo8XfxIQehr3Lut48PiQY9j59ZLLlR82bU_-YbM2mVvZywpIsWuRswcTn3YZYVChBIK7Y_0pkyBcxpJtd81ICbkM6ZDzIAp3t_HKcV0XOY7wEJWVGnsNO0N42uJ8u2cB0bQYtiFHPOoWBG63v7A3OMXUpnMsCZw')"></div>
+<div class="flex flex-col gap-1">
+<span class="text-sm text-slate-500 dark:text-slate-400">BÜYÜK VERİ • 7 DAKİKA OKUMA</span>
+<h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">Apache Superset ile İnteraktif Dashboardlar</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">İş zekası ihtiyaçlarınız için açık kaynaklı, modern ve güçlü bir görselleştirme aracı olan Superset'in incelikleri.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFIRpPmDt8QQY1idOJq0eMyD73rRh5aBoHGVBD-mECDkR7tC-Rni1bQqrq4mLLVxCmmOsGDg4rVqvWlpak7IXhWfAEuZYLWta0camSZd7KjvWOx5HDKK-BDP9iydurJ7ao_rjs6N0fsompeY40r43_Gsap941X4s5s1QDxTrVcEkT4A8UQCWYmtgwAH37-UcgEhdh8NSjIzOq_BbNxul6B4b27sexm72NS0_KKzSJsyfPWmdbvV86UN9yof7P3qYckrvUm4OwgQS7t')"></div>
+<div class="flex flex-col gap-1">
+<span class="text-sm text-slate-500 dark:text-slate-400">VERİ ANALİTİĞİ • 4 DAKİKA OKUMA</span>
+<h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">Enerji Sektöründe Tahminsel Analitik</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Yenilenebilir enerji kaynaklarının üretim tahminlemesinde makine öğrenmesi modellerinin rolü ve önemi.</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-200 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+<span class="truncate">Tümünü Oku</span>
+</button>
+</div>
+</section>
+<section class="bg-slate-100 dark:bg-slate-900 rounded-lg p-10 md:p-16">
+<div class="flex flex-col items-center text-center gap-4">
+<h2 class="text-slate-900 dark:text-slate-50 text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] max-w-xl">Veri Odaklı Bir Geleceğe Hazır mısınız?</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base md:text-lg font-normal leading-normal max-w-xl">Projeleriniz hakkında konuşmak ve size özel çözümlerimizi sunmak için bizimle iletişime geçin.</p>
+<button class="mt-4 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Teklif Alın</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer class="bg-slate-800 dark:bg-slate-950 text-slate-300">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-3 flex flex-col items-start gap-4">
+<div class="flex items-center gap-4 text-slate-50">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-xl font-bold">DataCorp</span>
+</div>
+<p class="text-sm">Veri mühendisliği, ETL süreçleri ve büyük veri çözümlerinde uzmanlaşmış bir teknoloji firması.</p>
+<div class="flex items-center gap-4 mt-4">
+<a class="text-slate-400 hover:text-white" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 2.9,4.79C2.53,5.42 2.33,6.16 2.33,6.94C2.33,8.43 3.08,9.77 4.19,10.59C3.49,10.57 2.82,10.37 2.22,10.03C2.22,10.05 2.22,10.07 2.22,10.08C2.22,12.24 3.74,14.04 5.77,14.46C5.41,14.56 5.03,14.61 4.64,14.61C4.37,14.61 4.1,14.58 3.84,14.53C4.42,16.31 6.04,17.56 8.04,17.6C6.54,18.78 4.67,19.5 2.65,19.5C2.32,19.5 2,19.48 1.68,19.43C3.68,20.72 5.94,21.5 8.44,21.5C16,21.5 20.33,14.97 20.33,9.24C20.33,9.03 20.33,8.82 20.32,8.61C21.11,8.02 21.84,7.27 22.46,6Z"></path></svg></a>
+<a class="text-slate-400 hover:text-white" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19,3H5C3.89,3 3,3.89 3,5V19C3,20.11 3.9,21 5,21H19C20.11,21 21,20.11 21,19V5C21,3.89 20.1,3 19,3M8.5,18H6.5V9H8.5V18M7.5,8.2C6.67,8.2 6,7.53 6,6.7C6,5.87 6.67,5.2 7.5,5.2C8.33,5.2 9,5.87 9,6.7C9,7.53 8.33,8.2 7.5,8.2M18,18H16V13.37C16,12.05 15.26,11.25 14.1,11.25C13.08,11.25 12.5,11.9 12.22,12.52C12.11,12.73 12.09,13 12.09,13.28V18H10V9H12V10.2C12.44,9.52 13.28,8.85 14.82,8.85C16.64,8.85 18,10.02 18,12.87V18Z"></path></svg></a>
+<a class="text-slate-400 hover:text-white" href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.71,9.46L17.71,9.46L18,12H15V22H11V12H8V9H11V6.5C11,4.13 12.35,3 14.5,3C15.42,3 16.2,3.12 16.5,3.17V5.5H15.25C14.13,5.5 14,6.1 14,6.75V9H17.25L17,12H14V21H18V13H20V8H17.71Z"></path></svg></a>
+</div>
+</div>
+<div class="lg:col-span-2">
+<h3 class="font-bold text-white mb-4">Yardım ve Kaynaklar</h3>
+<ul class="space-y-3">
+<li><a class="hover:text-white text-sm" href="#">Veri Mevzuatı</a></li>
+<li><a class="hover:text-white text-sm" href="#">Sıkça Sorulan Sorular</a></li>
+<li><a class="hover:text-white text-sm" href="#">Yararlı Bilgiler</a></li>
+<li><a class="hover:text-white text-sm" href="#">Yayınlar</a></li>
+<li><a class="hover:text-white text-sm" href="#">Hazır Formlar</a></li>
+<li><a class="hover:text-white text-sm" href="#">Kılavuzlar</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h3 class="font-bold text-white mb-4">Bağlantılar</h3>
+<ul class="space-y-3">
+<li><a class="hover:text-white text-sm" href="/solutions">Hizmetlerimiz</a></li>
+<li><a class="hover:text-white text-sm" href="/solutions">Çözümlerimiz</a></li>
+<li><a class="hover:text-white text-sm" href="/hakkimizda">Hakkımızda</a></li>
+<li><a class="hover:text-white text-sm" href="/urunlerimiz">Ürünlerimiz</a></li>
+<li><a class="hover:text-white text-sm" href="/contact">İletişim</a></li>
+<li><a class="hover:text-white text-sm" href="/blog">Blog</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h3 class="font-bold text-white mb-4">İletişim</h3>
+<ul class="space-y-3 text-sm">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined !text-base mt-0.5">location_on</span>
+<span>Teknopark İstanbul, Pendik, İstanbul</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined !text-base mt-0.5">email</span>
+<span>info@datacorp.com</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined !text-base mt-0.5">call</span>
+<span>+90 216 123 45 67</span>
+</li>
+</ul>
+</div>
+<div class="lg:col-span-3">
+<div class="flex flex-col items-center lg:items-start gap-3">
+<h3 class="font-bold text-white">Mobil Erişim</h3>
+<div class="bg-white p-2 rounded-lg">
+<svg class="w-24 h-24" fill="none" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><path d="M5 5h35v35H5V5Zm8 8v19h19V13H13Zm-8 47h35v35H5V65Zm8 8v19h19V73H13Zm47-55h35v35H65V13Zm8 8v19h19V21H73ZM50 50h20v20H50V50Zm25 0h20v20H75V50Zm25 0h20v20H100V50ZM50 75h20v20H50V75Zm25 25h20v20H75v-20Z" fill="currentColor"></path><path d="M95 65H65v35h30V65Zm-5 30H70V70h20v25Z" fill="currentColor"></path></svg>
+</div>
+<p class="text-xs text-slate-400 text-center lg:text-left">Mobil siteye erişmek için <br/>QR kodu okutun.</p>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-slate-700 text-center text-sm">
+<p>© 2024 DataCorp. Tüm hakları saklıdır.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<style>
+        @keyframes infinite-scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .animate-infinite-scroll {
+            animation: infinite-scroll 40s linear infinite;
+        }
+    </style>
+</body></html>

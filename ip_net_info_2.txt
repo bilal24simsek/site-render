@@ -1,0 +1,65 @@
+﻿
+
+InterfaceAlias : Ethernet 4
+IPAddress      : 192.168.56.1
+
+InterfaceAlias : Ethernet 3
+IPAddress      : 169.254.93.1
+                 85
+
+InterfaceAlias : Bluetooth Ağ
+                  Bağlantısı
+IPAddress      : 169.254.13.1
+                 91
+
+InterfaceAlias : VMware Netwo
+                 rk Adapter V
+                 Mnet8
+IPAddress      : 192.168.45.1
+
+InterfaceAlias : VMware Netwo
+                 rk Adapter V
+                 Mnet1
+IPAddress      : 192.168.180.
+                 1
+
+InterfaceAlias : Yerel Ağ Bağ
+                 lantısı* 2
+IPAddress      : 169.254.161.
+                 51
+
+InterfaceAlias : Ethernet 2
+IPAddress      : 10.112.16.18
+                 3
+
+InterfaceAlias : Yerel Ağ Bağ
+                 lantısı* 1
+IPAddress      : 169.254.77.1
+                 42
+
+InterfaceAlias : OpenVPN Conn
+                 ect DCO Adap
+                 ter
+IPAddress      : 169.254.32.2
+                 43
+
+InterfaceAlias : Ethernet
+IPAddress      : 192.168.1.10
+                 8
+
+InterfaceAlias : Wi-Fi
+IPAddress      : 192.168.1.31
+
+InterfaceAlias : Yerel Ağ Bağ
+                 lantısı
+IPAddress      : 169.254.177.
+                 119
+
+InterfaceAlias : Loopback Pse
+                 udo-Interfac
+                 e 1
+IPAddress      : 127.0.0.1
+
+
+
+

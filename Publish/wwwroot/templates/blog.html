@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog / Teknik Yazılar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0b5eda",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="flex w-full max-w-7xl items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-100">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Firma Logosu</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9 text-sm font-medium text-slate-900 dark:text-slate-100">
+<a class="hover:text-primary transition-colors" href="/solutions">Hizmetler</a>
+<a class="hover:text-primary transition-colors" href="/solutions">Çözümler</a>
+<a class="text-primary font-bold" href="/blog">Teknik Yazılar</a>
+<a class="hover:text-primary transition-colors" href="/hakkimizda">Hakkımızda</a>
+<a class="hover:text-primary transition-colors" href="/contact">İletişim</a>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" href="/contact">
+<span class="truncate">Bize Ulaşın</span>
+</a>
+</div>
+<div class="lg:hidden">
+<button class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex w-full max-w-7xl flex-col flex-1 px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap gap-2 p-4 text-sm">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="/">Anasayfa</a>
+<span class="text-slate-400 dark:text-slate-500">/</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Teknik Yazılar</span>
+</div>
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-tight tracking-[-0.033em]">Teknik Yazılar</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl">Veri mühendisliği, ETL ve büyük veri teknolojileri üzerine en güncel makaleler ve uzman görüşleri.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 p-4">
+<div class="lg:col-span-8 space-y-8">
+<article class="p-4 @container bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start gap-6">
+<div class="w-full @xl:w-1/3 flex-shrink-0">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Abstract representation of database migration" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCoz75e3bVHGcuuWm09Gy1QCeql5DilogJO20-hkc3r1_3RKCTJc1AibSDeZuzyo86Zze9RtW6ssSg15GmwiYSp_jiIRID80cAzfPCcLGP9_dFlGzsHDZm_LIk7rjnjW1U_mrvFnpGUzkzxKS4gFn4aWcSl_1tdUze1WNAkuwCsDBvsa8_uKh0uL8iWRMvXs6z9ZEiPkx3MPqXDKGACY_H8G4Gp3zZuWk78APguBeNkw6nZr08YnvJ3UBwl8F2NxlPBFFRBpuOwdDha");'></div>
+</div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2">
+<p class="text-primary text-sm font-bold leading-normal">Veri Mühendisliği</p>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Oracle → PostgreSQL DWH Migrasyonu Nasıl Yapılır?</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">Bu yazıda, Oracle'dan PostgreSQL'e bir veri ambarı (DWH) migrasyonunun nasıl planlanacağını ve gerçekleştirileceğini adım adım ele alıyoruz.</p>
+<div class="flex items-center gap-3 justify-between mt-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Yazar Adı • 15 Ağustos 2023</p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-white text-sm font-medium leading-normal hover:bg-primary/90 transition-colors" href="#">
+<span class="truncate">Devamını Oku</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<article class="p-4 @container bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start gap-6">
+<div class="w-full @xl:w-1/3 flex-shrink-0">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Visualization of a complex data workflow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDERHjtXv4cRQX9tDo2X5qowvXBHBVdZSX7DNl8yyNnPHh2INWRhtKEtIEJLjdB1lf-MAULsiIX25y7Slp6wFBeQlqEkluo4Qq7Lavgg1NJhnsQYfmHv6oAZnbPqvXWBlbhtOZiHyuvbAwyTNtrh2pqV4o4nS6MJQoZwurly54bKMxlcnX8a09c1B_fOJj3Kx2w-BV6nIOkjAGQEiZSnkHfGvV6OPbVe_vVfjpbqhFaxVGKT3fwNbhtkDEbZ3Ch3JHQ7wLKPxEWpvFk");'></div>
+</div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2">
+<p class="text-primary text-sm font-bold leading-normal">ETL</p>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Airflow ile Veri İş Akışlarını Optimize Etme Rehberi</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">Apache Airflow kullanarak karmaşık veri iş akışlarınızı nasıl daha verimli, izlenebilir ve ölçeklenebilir hale getirebileceğinizi öğrenin.</p>
+<div class="flex items-center gap-3 justify-between mt-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Yazar Adı • 22 Temmuz 2023</p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-white text-sm font-medium leading-normal hover:bg-primary/90 transition-colors" href="#">
+<span class="truncate">Devamını Oku</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<article class="p-4 @container bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start gap-6">
+<div class="w-full @xl:w-1/3 flex-shrink-0">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Network of interconnected data streams" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1y1PytSjr8F8K7S8sVqVLv0FSJ_UzNmcSIYVQrjVX6nRpF1Ct2FVL-nlM8GUm0N1xkCb8Kq0fYfy8BFU2em-b-YamC3LNOjzj93Jx8Uo28ehT906640zbJ-Z2zLeUP5mKSl2onw6JHXWznPbH-jy_R7ZbOADLl6kd7d8j0a-YxihPVnPjDexlg4eHzm-sCbw-hU4LJR2xocvuOon4W2An59XjP9mKvoRnaVLNWHFtUFDzfPVwQ9wpWs6kG7UpTmb_h7Oa35x4yPcO");'></div>
+</div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2">
+<p class="text-primary text-sm font-bold leading-normal">Büyük Veri</p>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Kafka ve Gerçek Zamanlı Veri Akışı Mimarileri</h2>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal">Gerçek zamanlı veri işleme için Kafka'nın temellerini ve modern veri mimarilerindeki yerini keşfedin.</p>
+<div class="flex items-center gap-3 justify-between mt-2">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Yazar Adı • 10 Haziran 2023</p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-white text-sm font-medium leading-normal hover:bg-primary/90 transition-colors" href="#">
+<span class="truncate">Devamını Oku</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<nav class="flex items-center justify-center gap-2 pt-8">
+<a class="flex items-center justify-center rounded-lg size-10 text-slate-500 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#"><span class="material-symbols-outlined text-xl">chevron_left</span></a>
+<a class="flex items-center justify-center rounded-lg size-10 text-white bg-primary border border-primary" href="#">1</a>
+<a class="flex items-center justify-center rounded-lg size-10 text-slate-500 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">2</a>
+<a class="flex items-center justify-center rounded-lg size-10 text-slate-500 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">3</a>
+<span class="text-slate-500">...</span>
+<a class="flex items-center justify-center rounded-lg size-10 text-slate-500 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">8</a>
+<a class="flex items-center justify-center rounded-lg size-10 text-slate-500 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#"><span class="material-symbols-outlined text-xl">chevron_right</span></a>
+</nav>
+</div>
+<aside class="lg:col-span-4 space-y-8">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="relative">
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 pl-10 focus:ring-primary focus:border-primary" placeholder="Yazılarda Ara..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">Kategoriler</h3>
+<ul class="space-y-3">
+<li><a class="flex justify-between items-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#"><span>Veri Mühendisliği</span><span class="text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 rounded-full px-2 py-0.5">12</span></a></li>
+<li><a class="flex justify-between items-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#"><span>ETL</span><span class="text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 rounded-full px-2 py-0.5">8</span></a></li>
+<li><a class="flex justify-between items-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#"><span>Airflow</span><span class="text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 rounded-full px-2 py-0.5">5</span></a></li>
+<li><a class="flex justify-between items-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#"><span>Kafka</span><span class="text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 rounded-full px-2 py-0.5">3</span></a></li>
+<li><a class="flex justify-between items-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#"><span>Optimizasyon</span><span class="text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 rounded-full px-2 py-0.5">7</span></a></li>
+<li><a class="flex justify-between items-center text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#"><span>PostgreSQL</span><span class="text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 rounded-full px-2 py-0.5">4</span></a></li>
+</ul>
+</div>
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">Popüler Yazılar</h3>
+<ul class="space-y-4">
+<li>
+<a class="group" href="#">
+<p class="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-primary dark:group-hover:text-primary transition-colors">ETL Süreçlerinde Performans İyileştirme Teknikleri</p>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Yazar Adı • 05 Mayıs 2023</p>
+</a>
+</li>
+<li>
+<a class="group" href="#">
+<p class="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-primary dark:group-hover:text-primary transition-colors">Veri Ambarı Modelleme: Star Schema vs Snowflake</p>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Yazar Adı • 18 Nisan 2023</p>
+</a>
+</li>
+<li>
+<a class="group" href="#">
+<p class="font-semibold text-slate-800 dark:text-slate-200 group-hover:text-primary dark:group-hover:text-primary transition-colors">Büyük Veri Analizi için Doğru Teknolojiyi Seçmek</p>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Yazar Adı • 02 Mart 2023</p>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,34 @@
+@page "/tech/superset"
+@{
+    Layout = "_RevizeLayout";
+    ViewData["Title"] = "Apache Superset";
+}
+
+<div class="px-4 sm:px-8 lg:px-10 flex flex-1 justify-center py-10">
+    <div class="layout-content-container flex flex-col max-w-5xl flex-1 gap-6">
+        <div class="flex flex-col gap-3 text-center">
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide">Ürün Detayı</p>
+            <h1 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-slate-50">Apache Superset</h1>
+            <p class="text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+                Modern veri keşfi, dashboard ve görselleştirme için Superset. Yönetilen kurulum, rol tabanlı erişim, LDAP/SSO entegrasyonu ve ölçekli sorgu optimizasyonu sağlıyoruz.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 items-start">
+            <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-lg">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfIeBCkptXnTZapLrpq1v5JDlOP9BtwX5BNUP2vkCaDaH6yOQ1uw3nasfPIUOGIeICwtpcPZpxiZt62FqJ3DZsdWqIDrcfXQO3Bib4SX6-Fs_qHc2vx2Gu5AzT9CDSbb_LAZ8bprQZEW0dQZjNLdhx5wpn4nrnTA8ua1bm1OMvqzjLJyojKni8LRthoEaU93HDZdFN9uhLdRwL_gs8k-ZEktrZ11J6fENZTpvA9yJ5-_VNYyJB7w0QJ4pz6feKt_RH39iFI8Uw4N5R" alt="Superset" />
+            </div>
+            <div class="space-y-4 text-slate-700 dark:text-slate-200">
+                <h2 class="text-xl font-bold">Öne çıkanlar</h2>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>Çoklu veri kaynağı (PostgreSQL, BigQuery, Snowflake, Kafka)</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>Dashboard versiyonlama ve erişim kontrolü</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>Gecikme optimizasyonu, cache ve sorgu hızlandırma</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>SSO/LDAP, RBAC, denetim logları</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-6">
+            <a class="inline-flex items-center gap-2 rounded-lg bg-primary text-white px-5 py-3 font-semibold hover:bg-primary/90 transition" href="/contact">Superset için iletişime geç</a>
+        </div>
+    </div>
+</div>

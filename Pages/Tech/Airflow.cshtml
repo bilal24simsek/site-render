@@ -1,0 +1,34 @@
+@page "/tech/airflow"
+@{
+    Layout = "_RevizeLayout";
+    ViewData["Title"] = "Apache Airflow";
+}
+
+<div class="px-4 sm:px-8 lg:px-10 flex flex-1 justify-center py-10">
+    <div class="layout-content-container flex flex-col max-w-5xl flex-1 gap-6">
+        <div class="flex flex-col gap-3 text-center">
+            <p class="text-sm font-semibold text-primary uppercase tracking-wide">Ürün Detayı</p>
+            <h1 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-slate-50">Apache Airflow</h1>
+            <p class="text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+                DAG tasarımı, zamanlama, SLA takibi ve gözlemlenebilirlik için yönetilen Airflow platformu kuruyoruz.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 items-start">
+            <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-lg">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcOcwgxIA0G8x2ERNR-YqqCJU8UEINrmoARItrH7Y37iSdSiALwn2CKVHbw3XvBLg8mRV71NmOY0NhXqgheZzkTrPaTQ0wbilHgY6-VcNOVqAqf1wJFxZUYHxg5EOmDrAg3q16KUtJpPM8Do6oaTS_ngGfY-Bk6aED-rJa82GL4rX5825Dpt9iYJ9CQv2hUXPh7qNwuTeCqJLJ_J1RL1SDHtuOEaKGpOsIZ9qAITk9It7ZBJsn54xnrzj9qy8-dYYa98PGzmweUoXe" alt="Airflow" />
+            </div>
+            <div class="space-y-4 text-slate-700 dark:text-slate-200">
+                <h2 class="text-xl font-bold">Öne çıkanlar</h2>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>DAG best-practice (modüler, idempotent, test edilebilir)</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>Observability: log, metrik, trace entegrasyonu</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>CI/CD ve çoklu ortam (dev/stage/prod) yönetimi</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span>Alarmlar, SLA uyarıları ve otomatik yeniden çalıştırma</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-6">
+            <a class="inline-flex items-center gap-2 rounded-lg bg-primary text-white px-5 py-3 font-semibold hover:bg-primary/90 transition" href="/contact">Airflow için iletişime geç</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,178 @@
+@page "/urunler/hawketl"
+@{
+    Layout = "_RevizeLayout";
+    ViewData["Title"] = "HawkETL - Gelişmiş Veri İşleme Platformu";
+}
+
+@* Hero Section *@
+<section class="relative w-full overflow-hidden bg-slate-950 pt-20">
+    <div class="absolute inset-0 z-0 opacity-20">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-orange-500/20 via-transparent to-transparent"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 relative z-10 py-24 lg:py-32 text-center">
+        <div data-aos="fade-up">
+            <span class="inline-block py-1 px-3 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-bold uppercase tracking-widest mb-6">Yüksek Performanslı ETL</span>
+            <h1 class="text-5xl lg:text-7xl font-black text-white mb-6 leading-tight">HawkETL</h1>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Karmaşık veri dönüşümlerini saniyeler içinde tamamlayın. Kaynak ne olursa olsun, veriyi hedef sisteme en güvenli ve hızlı şekilde ulaştırın.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="document.getElementById('demoLauncher').click()" class="px-10 py-4 bg-orange-600 text-white font-bold rounded-2xl hover:bg-orange-700 transition-all shadow-lg shadow-orange-600/20">Hemen Deneyin</button>
+                <a href="#how" class="px-10 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-2xl hover:bg-white/10 transition-all">Nasıl Çalışır?</a>
+            </div>
+        </div>
+        
+        <div class="mt-20 relative px-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="max-w-4xl mx-auto relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-amber-600 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative bg-slate-900 border border-white/10 rounded-[2rem] p-4 lg:p-8 overflow-hidden">
+                    <div class="flex items-center gap-2 mb-6 border-b border-white/5 pb-4">
+                        <div class="flex gap-1.5">
+                            <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+                            <div class="w-3 h-3 rounded-full bg-amber-500/50"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                        </div>
+                        <div class="text-[10px] text-slate-500 font-mono ml-4 tracking-widest uppercase">Pipeline Designer</div>
+                    </div>
+                    <div class="grid md:grid-cols-4 gap-4 aspect-[16/7]">
+                        <div class="col-span-1 bg-white/5 rounded-xl border border-dashed border-white/10 flex flex-col items-center justify-center gap-2 p-4">
+                            <span class="material-symbols-outlined text-orange-500">database</span>
+                            <span class="text-[10px] text-slate-400 font-bold uppercase">Sources</span>
+                        </div>
+                        <div class="col-span-2 bg-orange-500/5 rounded-xl border border-orange-500/20 flex flex-col items-center justify-center p-4 relative">
+                            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(249,115,22,0.1)_0%,_transparent_70%)]"></div>
+                            <span class="material-symbols-outlined text-orange-400 text-4xl mb-2 animate-pulse">settings_ethernet</span>
+                            <div class="text-[12px] text-white font-black">HAWK ENGINE</div>
+                            <div class="mt-4 flex gap-2">
+                                <div class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-[ping_1.5s_linear_infinite]"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-[ping_1.5s_linear_infinite_0.5s]"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-[ping_1.5s_linear_infinite_1s]"></div>
+                            </div>
+                        </div>
+                        <div class="col-span-1 bg-white/5 rounded-xl border border-dashed border-white/10 flex flex-col items-center justify-center gap-2 p-4">
+                            <span class="material-symbols-outlined text-green-500">cloud_upload</span>
+                            <span class="text-[10px] text-slate-400 font-bold uppercase">Targets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Features *@
+<section id="how" class="py-24 bg-white dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-8">Uçuş Hızında Veri Entegrasyonu</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center text-orange-500 font-bold text-xl">01</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Çok Kanallı Bağlantı</h4>
+                            <p class="text-slate-500 dark:text-slate-400">SQL, NoSQL, API, CSV veya Streaming... HawkETL yüzlerce hazır konnektörle her yere bağlanır.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center text-orange-500 font-bold text-xl">02</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Sürükle-Bırak Tasarım</h4>
+                            <p class="text-slate-500 dark:text-slate-400">Kod yazmadan karmaşık transformasyonlar tasarlayın. Veri temizleme, birleştirme ve zenginleştirme artık çok kolay.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="flex-shrink-0 w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center text-orange-500 font-bold text-xl">03</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Akıllı İzleme</h4>
+                            <p class="text-slate-500 dark:text-slate-400">Hangi veri nerede, ne zaman işlendi? Detaylı loglama ve hata yönetimi ile kontrol tamamen sizde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-left">
+                <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+                    <h5 class="font-bold text-orange-500 mb-2">3x</h5>
+                    <p class="text-[10px] text-slate-500 uppercase font-black">Daha Performanslı</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+                    <h5 class="font-bold text-orange-500 mb-2">25 TB</h5>
+                    <p class="text-[10px] text-slate-500 uppercase font-black">Günlük Veri Boyutu</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+                    <h5 class="font-bold text-orange-500 mb-2">500+</h5>
+                    <p class="text-[10px] text-slate-500 uppercase font-black">Günlük Tablo Aktarımı</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+                    <h5 class="font-bold text-orange-500 mb-2">1000+</h5>
+                    <p class="text-[10px] text-slate-500 uppercase font-black">Aktif Rapor</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+                    <h5 class="font-bold text-orange-500 mb-2">10+</h5>
+                    <p class="text-[10px] text-slate-500 uppercase font-black">Kurumsal Uygulama</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800">
+                    <h5 class="font-bold text-orange-500 mb-2">Partitioning</h5>
+                    <p class="text-[10px] text-slate-500 uppercase font-black">Akıllı Yönetim</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Competitive Comparison *@
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-white dark:bg-slate-800 rounded-[3rem] p-8 md:p-16 border border-slate-200 dark:border-slate-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            
+            <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">Geleneksel ETL Araçlarından <span class="text-orange-500">3 Kat Daha Hızlı</span></h2>
+                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
+                        Pentaho, Talend, Nifi, Mage ve Airbyte gibi global muadillerine göre normalize edilmiş testlerde 3 kat daha yüksek veri işleme kapasitesi.
+                    </p>
+                    <div class="flex gap-4">
+                         <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-2xl flex items-center justify-center mb-2">
+                                <span class="text-[10px] font-bold text-slate-400">Penta.</span>
+                            </div>
+                         </div>
+                         <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-2xl flex items-center justify-center mb-2">
+                                <span class="text-[10px] font-bold text-slate-400">Talend</span>
+                            </div>
+                         </div>
+                         <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-slate-100 dark:bg-slate-700 rounded-2xl flex items-center justify-center mb-2">
+                                <span class="text-[10px] font-bold text-slate-400">NiFi</span>
+                            </div>
+                         </div>
+                         <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-orange-500/10 border border-orange-500/30 rounded-2xl flex items-center justify-center mb-2 shadow-lg shadow-orange-500/10">
+                                <span class="text-xs font-black text-orange-500 italic">HAWK</span>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-slate-50 dark:bg-slate-900/80 p-6 rounded-2xl border border-slate-100 dark:border-slate-700">
+                        <div class="flex justify-between items-center mb-2">
+                             <span class="text-sm font-bold text-slate-600 dark:text-slate-300">Ölçeklenebilirlik</span>
+                             <span class="text-xs bg-green-500/10 text-green-500 px-2 py-1 rounded">Tam Uyumlu</span>
+                        </div>
+                        <p class="text-xs text-slate-500">HawkETL, Kubernetes podları üzerinde dinamik olarak ölçeklenerek ani veri yüklerini kolayca karşılar.</p>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-900/80 p-6 rounded-2xl border border-slate-100 dark:border-slate-700">
+                        <div class="flex justify-between items-center mb-2">
+                             <span class="text-sm font-bold text-slate-600 dark:text-slate-300">Uygulama Entegrasyonu</span>
+                             <span class="text-xs bg-orange-500/10 text-orange-500 px-2 py-1 rounded">10+ Kurumsal App</span>
+                        </div>
+                        <p class="text-xs text-slate-500">SAP, Jira, LUNA, OMS, SmartPulse ve diğer kurumsal sistemlerle önceden yapılandırılmış entegrasyon kütüphanesi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
