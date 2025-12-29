@@ -103,6 +103,7 @@ C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Si
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.RazorAssemblyInfo.cache
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.RazorAssemblyInfo.cs
+C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.sourcelink.json
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\staticwebassets\msbuild.Sitem.Web.Microsoft.AspNetCore.StaticWebAssets.props
@@ -117,4 +118,3 @@ C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\re
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.pdb
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.genruntimeconfig.cache
 C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\ref\Sitem.Web.dll
-C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\obj\Debug\net8.0\Sitem.Web.sourcelink.json
