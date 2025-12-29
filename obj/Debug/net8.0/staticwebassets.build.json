@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SIcc4MJ/YjCb++ikk84h67xRDOKbu1LqPmfltCLgNpw=",
+  "Hash": "tOPTxw1EiFBK+A+045ieT93gWRzIg/o4gLV9qnTWh2A=",
   "Source": "Sitem.Web",
   "BasePath": "_content/Sitem.Web",
   "Mode": "Default",
@@ -680,6 +680,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo\\superset.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\yemvars_logo.png",
+      "SourceId": "Sitem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "BasePath": "_content/Sitem.Web",
+      "RelativePath": "logo/yemvars_logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo\\yemvars_logo.png"
     },
     {
       "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\menu.mp4",
