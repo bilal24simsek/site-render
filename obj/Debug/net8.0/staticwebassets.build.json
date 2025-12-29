@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tOPTxw1EiFBK+A+045ieT93gWRzIg/o4gLV9qnTWh2A=",
+  "Hash": "FjZyOQIbVUskuxSv38ctFj2+NMK84GhW7aYhgEQSth0=",
   "Source": "Sitem.Web",
   "BasePath": "_content/Sitem.Web",
   "Mode": "Default",
@@ -433,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo\\edvars_logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\hawk_etl_icon.png",
+      "SourceId": "Sitem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "BasePath": "_content/Sitem.Web",
+      "RelativePath": "logo/hawk_etl_icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo\\hawk_etl_icon.png"
     },
     {
       "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\hawketl.png",
