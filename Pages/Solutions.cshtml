@@ -1,247 +1,322 @@
 ﻿@page "/solutions"
 @{
     Layout = "_RevizeLayout";
-    ViewData["Title"] = "Hizmetlerimiz";
+    ViewData["Title"] = "Teknik Çözümler";
 }
 
-@* Hero Section *@
-<section class="relative w-full mb-16 lg:mb-24">
-    <div class="hero-wrapper relative w-full h-[500px] lg:h-[600px] overflow-hidden border-b border-slate-200 dark:border-white/5 bg-slate-900">
-         <div id="particles-js-solutions" class="absolute inset-0 z-20 pointer-events-none mix-blend-screen"></div>
-        <div class="hero-slide active h-full w-full absolute inset-0 flex items-center justify-center text-center px-4">
-             <div class="hero-bg absolute inset-0 bg-cover bg-center z-0" style="background-image: linear-gradient(135deg, rgba(10,16,32,0.85), rgba(13,31,74,0.75)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80');"></div>
-             <div class="hero-content relative z-10 max-w-5xl mx-auto space-y-6 md:space-y-8">
-                <span class="inline-block py-1.5 px-4 rounded-full bg-blue-500/20 text-blue-200 text-xs md:text-sm font-bold tracking-wider uppercase backdrop-blur-sm border border-blue-500/30">Hizmetlerimiz</span>
-                <h1 class="text-4xl sm:text-5xl md:text-8xl font-black text-white leading-[1] tracking-tighter">Veriyi Zekaya,<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 animate-text-shimmer">Zekayı Güce Dönüştürün</span></h1>
-                <p class="text-slate-300 text-lg md:text-2xl font-light tracking-wide max-w-2xl mx-auto leading-relaxed">Modern veri mimarisi ve analitik çözümlerle işletmenizin potansiyelini zirveye taşıyın.</p>
+<style>
+    :root {
+        --p-blue: #0b5eda;
+        --p-indigo: #4f46e5;
+        --p-purple: #7c3aed;
+        --p-slate: #0f172a;
+        --glass-bg: rgba(255, 255, 255, 0.03);
+        --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Premium Data Grid Background */
+    .data-grid-bg {
+        background-image: 
+            linear-gradient(rgba(11, 94, 218, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(11, 94, 218, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+
+    /* Frosted Glass - Deep Blur */
+    .frosted-glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(40px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    }
+    .dark .frosted-glass {
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    /* 3D Perspective Tilt Card */
+    .corporate-card {
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        transform-style: preserve-3d;
+    }
+    .corporate-card:hover {
+        transform: translateY(-10px) rotateX(2deg) rotateY(-2deg);
+        box-shadow: 0 40px 80px -20px rgba(11, 94, 218, 0.15);
+    }
+
+    #particles-js-solutions {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .shimmer-text {
+        background: linear-gradient(90deg, #fff, #3b82f6, #fff);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shimmerText 3s linear infinite;
+    }
+    @@keyframes shimmerText {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+    }
+</style>
+
+<div class="data-grid-bg min-h-screen pb-32">
+    @* Premium Bento-Grid Services Header *@
+    <section class="relative w-full pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-white dark:bg-slate-950">
+        <div id="particles-js-solutions"></div>
+        
+        <!-- Abstract Tech Shapes -->
+        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-indigo-500/10 blur-[120px] rounded-full"></div>
+        </div>
+
+        <div class="container mx-auto px-4 md:px-10 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Main Header Card -->
+                <div class="lg:col-span-8 frosted-glass p-8 md:p-16 rounded-[3rem] corporate-card" data-aos="fade-right">
+                    <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-xs font-black uppercase tracking-widest mb-10">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                        </span>
+                        KURUMSAL TEKNOLOJİ ÇÖZÜMLERİ
+                    </div>
+                    
+                    <h1 class="text-6xl md:text-8xl font-black text-slate-900 dark:text-white leading-[0.9] tracking-tighter mb-8">
+                        VERİDEN<br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 animate-text-shimmer">DEĞER ÜRETİN</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-2xl font-light leading-relaxed">
+                        Modern veri mimarisi, yüksek performanslı ETL süreçleri ve yapay zeka destekli analitik çözümlerle işletmenizi geleceğe hazırlıyoruz.
+                    </p>
+                </div>
+
+                <!-- Featured Stats Column -->
+                <div class="lg:col-span-4 grid grid-cols-1 gap-8">
+                    <div class="frosted-glass p-10 rounded-[3rem] corporate-card flex flex-col justify-between overflow-hidden relative group" data-aos="fade-left">
+                        <div class="absolute -right-10 -bottom-10 text-slate-100 dark:text-white/5 font-black text-[12rem] select-none group-hover:rotate-12 transition-transform">24/7</div>
+                        <div class="relative z-10">
+                            <p class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 mb-4">SISTEM IZLEME</p>
+                            <h3 class="text-6xl font-black text-slate-900 dark:text-white mb-2">100<span class="text-2xl text-slate-400 align-top ml-1">%</span></h3>
+                            <p class="text-sm text-slate-500 font-bold">Kesintisiz Teknik Destek</p>
+                        </div>
+                    </div>
+
+                    <div class="frosted-glass p-10 rounded-[3rem] corporate-card flex flex-col justify-between" data-aos="fade-left" data-aos-delay="100">
+                         <div class="space-y-6">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-black uppercase tracking-[0.3em] text-indigo-600">PERFORMANS</span>
+                                <span class="material-symbols-outlined text-indigo-600">bolt</span>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-black text-slate-900 dark:text-white mb-2">Hawk ETL Peak</h4>
+                                <p class="text-xs text-slate-500">Milyonlarca satır veriyi saniyeler içinde işleme kapasitesi.</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <div class="container mx-auto px-4 md:px-10 py-32">
+        <div class="text-center mb-24 space-y-4">
+             <h2 class="text-4xl md:text-6xl font-black text-slate-900 dark:text-white tracking-tighter">UZMANLIK ALANLARIMIZ</h2>
+             <p class="text-slate-500 dark:text-slate-400 max-w-xl mx-auto font-light">Uçtan uca veri yolculuğunuzda size rehberlik edecek teknik yetkinliklerimiz.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. Veri Ambarı -->
+            <div class="frosted-glass p-10 rounded-[3rem] corporate-card group" data-aos="fade-up">
+                <div class="w-20 h-20 rounded-3xl bg-blue-600 text-white flex items-center justify-center shadow-2xl shadow-blue-500/20 mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <span class="material-symbols-outlined text-4xl">database</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-4">Veri Ambarı</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light mb-8">Merkezi, ölçeklenebilir ve yüksek performanslı veri mimarileri ile tüm verilerinizi tek bir güvenli noktada birleştiriyoruz.</p>
+                <div class="h-1 w-12 bg-blue-600 rounded-full group-hover:w-full transition-all duration-700"></div>
+            </div>
+
+            <!-- 2. ETL Süreçleri -->
+            <div class="frosted-glass p-10 rounded-[3rem] corporate-card group" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-20 h-20 rounded-3xl bg-indigo-600 text-white flex items-center justify-center shadow-2xl shadow-indigo-500/20 mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <span class="material-symbols-outlined text-4xl">hub</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-4">ETL & Entegrasyon</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light mb-8">Veriyi kaynaktan hedefe en verimli şekilde taşıyan, dönüştüren ve temizleyen optimize veri boru hatları kuruyoruz.</p>
+                <div class="h-1 w-12 bg-indigo-600 rounded-full group-hover:w-full transition-all duration-700"></div>
+            </div>
+
+            <!-- 3. BIAnalytics Raporlama -->
+            <div class="frosted-glass p-10 rounded-[3rem] corporate-card group" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-20 h-20 rounded-3xl bg-emerald-600 text-white flex items-center justify-center shadow-2xl shadow-emerald-500/20 mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <span class="material-symbols-outlined text-4xl">bar_chart_4_bars</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-4">İş Analitiği</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light mb-8">Karmaşık verileri anlaşılır içgörülere dönüştüren, stratejik kararlarınızı destekleyecek interaktif dashboardlar tasarlıyoruz.</p>
+                <div class="h-1 w-12 bg-emerald-600 rounded-full group-hover:w-full transition-all duration-700"></div>
+            </div>
+
+            <!-- 4. Real-Time Entegrasyon -->
+            <div class="frosted-glass p-10 rounded-[3rem] corporate-card group" data-aos="fade-up">
+                <div class="w-20 h-20 rounded-3xl bg-purple-600 text-white flex items-center justify-center shadow-2xl shadow-purple-500/20 mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <span class="material-symbols-outlined text-4xl">sync_alt</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-4">Gerçek Zamanlı Veri</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light mb-8">Kafka ve CDC teknolojileriyle veriyi oluştuğu anda yakalayan, milisaniyelik gecikme ile çalışan canlı sistemler.</p>
+                <div class="h-1 w-12 bg-purple-600 rounded-full group-hover:w-full transition-all duration-700"></div>
+            </div>
+
+            <!-- 5. Orkestrasyon -->
+            <div class="frosted-glass p-10 rounded-[3rem] corporate-card group" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-20 h-20 rounded-3xl bg-orange-600 text-white flex items-center justify-center shadow-2xl shadow-orange-500/20 mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <span class="material-symbols-outlined text-4xl">settings_ethernet</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-4">Veri Orkestrasyonu</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light mb-8">Apache Airflow ile karmaşık veri iş akışlarını otomatize eden, izlenebilir ve güvenilir yönetim katmanları.</p>
+                <div class="h-1 w-12 bg-orange-600 rounded-full group-hover:w-full transition-all duration-700"></div>
+            </div>
+
+            <!-- 6. 7/24 Destek -->
+            <div class="frosted-glass p-10 rounded-[3rem] corporate-card group" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-20 h-20 rounded-3xl bg-red-600 text-white flex items-center justify-center shadow-2xl shadow-red-500/20 mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <span class="material-symbols-outlined text-4xl">support_agent</span>
+                </div>
+                <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-4">Teknik Danışmanlık</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light mb-8">Sistemlerinizin kesintisiz ve performanslı çalışması için uzman ekibimizle 7/24 izleme ve destek sunuyoruz.</p>
+                <div class="h-1 w-12 bg-red-600 rounded-full group-hover:w-full transition-all duration-700"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Details Sections -->
+    <div class="container mx-auto px-4 md:px-10 space-y-40 mt-20">
+        <!-- 1. AIRFLOW / KAFKA -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8" data-aos="fade-right">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 text-[10px] font-black uppercase tracking-widest">
+                    BÜTÜNLEŞİK ÇÖZÜM
+                </div>
+                <h3 class="text-5xl font-black text-slate-900 dark:text-white leading-tight tracking-tighter">Uçtan Uca Modern Veri Mimarisi</h3>
+                <p class="text-lg text-slate-500 dark:text-slate-400 font-light leading-relaxed">Veri ambarı çözümlerimizi, **Apache Airflow**'un güçlü orkestrasyon yetenekleri ve **Kafka**'nın gerçek zamanlı veri akış gücüyle birleştiriyoruz. Veriniz sadece depolanmaz; Airflow ile zamanlanır, Kafka ile anlık olarak akar.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="frosted-glass p-6 rounded-2xl border border-blue-500/10">
+                        <span class="material-symbols-outlined text-blue-600 mb-2">hub</span>
+                        <h4 class="font-bold text-slate-900 dark:text-white">Merkezi Yönetim</h4>
+                        <p class="text-xs text-slate-500">Tüm akışların tek noktadan kontrolü.</p>
+                    </div>
+                    <div class="frosted-glass p-6 rounded-2xl border border-indigo-500/10">
+                        <span class="material-symbols-outlined text-indigo-600 mb-2">bolt</span>
+                        <h4 class="font-bold text-slate-900 dark:text-white">Anlık İletim</h4>
+                        <p class="text-xs text-slate-500">Milisaniyeler içinde veri akışı.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group" data-aos="fade-left">
+                <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                <div class="relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl aspect-video lg:aspect-square">
+                    <img src="/img/solutions/arch.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. HAWK ETL -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:flex-row-reverse">
+             <div class="relative group lg:order-2" data-aos="fade-left">
+                <div class="absolute -inset-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                <div class="relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl aspect-video lg:aspect-square">
+                    <img src="/img/solutions/hawk.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                </div>
+            </div>
+            <div class="space-y-8 lg:order-1" data-aos="fade-right">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 text-[10px] font-black uppercase tracking-widest">
+                    ÖZEL TEKNOLOJİ
+                </div>
+                <h3 class="text-5xl font-black text-slate-900 dark:text-white leading-tight tracking-tighter">Hawk ETL: Sınırları Zorlayın</h3>
+                <p class="text-lg text-slate-500 dark:text-slate-400 font-light leading-relaxed">Standart ETL araçlarının sınırlarına takılmayın. Kendi geliştirdiğimiz **Hawk ETL** motoru ile verilerinizi kaynaktan hedefe en hızlı, güvenli ve kayıpsız şekilde taşıyoruz.</p>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4 text-slate-600 dark:text-slate-300">
+                        <span class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center"><span class="material-symbols-outlined text-sm">check</span></span>
+                        <span>Optimize edilmiş yüksek hacimli yükleme algoritmaları</span>
+                    </li>
+                    <li class="flex items-center gap-4 text-slate-600 dark:text-slate-300">
+                        <span class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center"><span class="material-symbols-outlined text-sm">check</span></span>
+                        <span>Karmaşık iş kuralı (Business Rule) tanımlama motoru</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. Final Call to Action Card -->
+        <div class="relative p-10 md:p-20 rounded-[4rem] bg-gradient-to-br from-blue-600 to-indigo-800 text-white overflow-hidden group corporate-card" data-aos="zoom-in">
+             <div class="absolute -right-20 -top-20 w-[400px] h-[400px] bg-white/10 rounded-full blur-[100px] group-hover:scale-150 transition-transform duration-1000"></div>
+             <div class="absolute -left-20 -bottom-20 w-[300px] h-[300px] bg-indigo-500/20 rounded-full blur-[80px]"></div>
+             
+             <div class="relative z-10 text-center space-y-10">
+                 <h2 class="text-5xl md:text-7xl font-black tracking-tighter">Geleceğin Veri Mimarisini<br/>Birlikte Kuralım</h2>
+                 <p class="text-xl md:text-2xl text-blue-100 font-light max-w-2xl mx-auto">Uzman ekibimizle tanışın ve işletmenizin dijital dönüşüm yolculuğunu bugün başlatın.</p>
+                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="/contact" class="px-10 py-5 bg-white text-blue-600 font-black rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-2xl">BİZE ULAŞIN</a>
+                    <a href="/blog" class="px-10 py-5 border border-white/30 backdrop-blur-md text-white font-black rounded-2xl hover:bg-white/10 transition-all">TEKNİK YAZILARI OKUYUN</a>
+                 </div>
              </div>
         </div>
     </div>
-</section>
+</div>
 
 @section Scripts {
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        if(window.particlesJS) {
-            particlesJS('particles-js-solutions', {
-              "particles": { "number": { "value": 30, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle" }, "opacity": { "value": 0.2, "random": false }, "size": { "value": 2, "random": false }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.1, "width": 1 }, "move": { "enable": true, "speed": 0.4, "direction": "right", "random": false, "straight": false, "out_mode": "out", "bounce": false } },
-              "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false }, "onclick": { "enable": false }, "resize": true } },
-              "retina_detect": true
+        function initParticles() {
+            if(window.particlesJS) {
+                particlesJS('particles-js-solutions', {
+                    "particles": {
+                        "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+                        "color": { "value": "#3b82f6" },
+                        "shape": { "type": "circle" },
+                        "opacity": { "value": 0.2, "random": true },
+                        "size": { "value": 3, "random": true },
+                        "line_linked": { "enable": true, "distance": 150, "color": "#3b82f6", "opacity": 0.1, "width": 1 },
+                        "move": { "enable": true, "speed": 0.8, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }
+                    },
+                    "retina_detect": true
+                });
+            }
+        }
+        initParticles();
+
+        function initTilt() {
+            document.querySelectorAll('.corporate-card').forEach(card => {
+                card.addEventListener('mousemove', e => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = (y - centerY) / 25;
+                    const rotateY = (centerX - x) / 25;
+                    card.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg) translateY(0)`;
+                });
             });
         }
+        initTilt();
     </script>
 }
-
-<div class="px-4 md:px-10 py-10 max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Card 1: Veri Ambarı -->
-        <div class="group relative p-8 rounded-[2rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500/30 dark:hover:border-blue-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="relative z-10 flex flex-col items-start gap-4">
-                <div class="w-16 h-16 rounded-2xl bg-blue-500 text-white flex items-center justify-center shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <span class="material-symbols-outlined text-4xl">database</span>
-                </div>
-                <div>
-                   <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Veri Ambarı</h3>
-                   <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-                       İşletmenizin kalbi olan veriyi güvenli, ölçeklenebilir ve erişilebilir merkezi ambarlarda topluyoruz.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 2: ETL -->
-        <div class="group relative p-8 rounded-[2rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-indigo-500/30 dark:hover:border-indigo-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-500/10 hover:-translate-y-1 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="relative z-10 flex flex-col items-start gap-4">
-                <div class="w-16 h-16 rounded-2xl bg-indigo-500 text-white flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <span class="material-symbols-outlined text-4xl">hub</span>
-                </div>
-                <div>
-                   <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">ETL</h3>
-                   <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-                       Farklı kaynaklardan gelen verileri dönüştürüp temizleyerek analize hazır hale getiren optimize süreçler.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 3: BIAnalytics Raporlama -->
-        <div class="group relative p-8 rounded-[2rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/30 dark:hover:border-emerald-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-1 overflow-hidden">
-             <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-             <div class="relative z-10 flex flex-col items-start gap-4">
-                <div class="w-16 h-16 rounded-2xl bg-emerald-500 text-white flex items-center justify-center shadow-lg shadow-emerald-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <span class="material-symbols-outlined text-4xl">bar_chart_4_bars</span>
-                </div>
-                <div>
-                   <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">BIAnalytics Raporlama</h3>
-                   <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-                       Verilerinizi anlamlı içgörülere dönüştüren, stratejik kararlar almanızı kolaylaştıracak görsel dashboardlar.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 4: Real-Time Entegrasyon -->
-        <div class="group relative p-8 rounded-[2rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-500/30 dark:hover:border-purple-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10 hover:-translate-y-1 overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-             <div class="relative z-10 flex flex-col items-start gap-4">
-                <div class="w-16 h-16 rounded-2xl bg-purple-500 text-white flex items-center justify-center shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <span class="material-symbols-outlined text-4xl">sync_alt</span>
-                </div>
-                <div>
-                   <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">Real-Time Entegrasyon</h3>
-                   <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-                       Kafka ve CDC teknolojileriyle veriyi oluştuğu anda yakalayan canlı veri boru hatları.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 5: Orkestrasyon -->
-        <div class="group relative p-8 rounded-[2rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-orange-500/30 dark:hover:border-orange-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/10 hover:-translate-y-1 overflow-hidden">
-             <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-             <div class="relative z-10 flex flex-col items-start gap-4">
-                <div class="w-16 h-16 rounded-2xl bg-orange-500 text-white flex items-center justify-center shadow-lg shadow-orange-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <span class="material-symbols-outlined text-4xl">settings_ethernet</span>
-                </div>
-                <div>
-                   <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">Orkestrasyon</h3>
-                   <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-                       Airflow ile karmaşık veri iş akışlarını otomatize eden, izlenebilir ve güvenilir sistemler.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 6: 7/24 Hizmet -->
-        <div class="group relative p-8 rounded-[2rem] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-red-500/30 dark:hover:border-red-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-red-500/10 hover:-translate-y-1 overflow-hidden">
-             <div class="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-             <div class="relative z-10 flex flex-col items-start gap-4">
-                <div class="w-16 h-16 rounded-2xl bg-red-500 text-white flex items-center justify-center shadow-lg shadow-red-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <span class="material-symbols-outlined text-4xl">support_agent</span>
-                </div>
-                <div>
-                   <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">7/24 Hizmet</h3>
-                   <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
-                       Sistemlerinizin kesintisiz çalışması için uzman ekibimizle 7 gün 24 saat izleme ve destek hizmeti sunuyoruz.
-                   </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="px-4 md:px-10 py-16 md:py-24 max-w-7xl mx-auto space-y-20">
-    <!-- Section 1: Modern Veri Mimarisi (Veri Ambarı + Airflow + Kafka) -->
-    <div class="flex flex-col md:flex-row gap-10 items-center">
-        <div class="flex flex-col gap-6 w-full md:w-1/2">
-            <div class="space-y-4">
-                <span class="inline-block py-1 px-3 rounded-lg bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 text-xs font-bold uppercase tracking-wider">Bütünleşik Çözüm</span>
-                <h3 class="text-slate-900 dark:text-white text-3xl font-bold leading-tight md:text-4xl">Uçtan Uca Modern Veri Mimarisi</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">Veri ambarı çözümlerimizi, Apache Airflow'un güçlü orkestrasyon yetenekleri ve Kafka'nın gerçek zamanlı veri akış gücüyle birleştiriyoruz. Veriniz sadece depolanmaz; Airflow ile zamanlanır, yönetilir ve Kafka ile anlık olarak akar. Bu hibrit yapı, işletmenize hem geçmişe dönük derinlemesine analiz hem de anlık aksiyon alma kabiliyeti kazandırır.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                 <div class="flex gap-3 items-start">
-                    <span class="material-symbols-outlined text-primary mt-1">hub</span>
-                    <div>
-                        <h4 class="text-slate-900 dark:text-white font-bold">Merkezi Yönetim</h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm">Tüm veri süreçlerinin tek bir orkestrasyon katmanından yönetimi.</p>
-                    </div>
-                </div>
-                 <div class="flex gap-3 items-start">
-                    <span class="material-symbols-outlined text-primary mt-1">bolt</span>
-                    <div>
-                        <h4 class="text-slate-900 dark:text-white font-bold">Anlık Akış</h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm">Kafka ile milisaniyeler mertebesinde veri iletimi.</p>
-                    </div>
-                </div>
-                 <div class="flex gap-3 items-start">
-                    <span class="material-symbols-outlined text-primary mt-1">storage</span>
-                    <div>
-                        <h4 class="text-slate-900 dark:text-white font-bold">Güçlü Depolama</h4>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm">Ölçeklenebilir ve güvenli veri ambarı altyapısı.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 aspect-video md:aspect-square lg:aspect-video rounded-3xl overflow-hidden shadow-2xl group">
-              <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('/img/solutions/arch.png');"></div>
-        </div>
-    </div>
-
-    <!-- Section 2: Hawk ETL -->
-    <div class="flex flex-col md:flex-row-reverse gap-10 items-center">
-        <div class="flex flex-col gap-6 w-full md:w-1/2">
-            <div class="space-y-4">
-                <span class="inline-block py-1 px-3 rounded-lg bg-indigo-100 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400 text-xs font-bold uppercase tracking-wider">Size Özel Teknoloji</span>
-                <h3 class="text-slate-900 dark:text-white text-3xl font-bold leading-tight md:text-4xl">Hawk ETL: Sınırsız Veri Dönüşümü</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">Standart ETL araçlarının sınırlarına takılmayın. Kendi geliştirdiğimiz Hawk ETL motoru ile verilerinizi kaynaktan hedefe en hızlı, güvenli ve kayıpsız şekilde taşıyoruz. Karmaşık dönüşüm senaryoları, yüksek hacimli veri yükleri ve özel iş kuralları için optimize edilmiş Hawk ETL, veri operasyonlarınızın gizli kahramanıdır.</p>
-            </div>
-            <div class="space-y-4">
-                <div class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-600">
-                        <span class="material-symbols-outlined">rocket_launch</span>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 dark:text-white">Yüksek Performans</h4>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">Optimize edilmiş algoritmalarla rakiplerinden daha hızlı.</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm">
-                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-600">
-                        <span class="material-symbols-outlined">rule</span>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 dark:text-white">Esnek Kural Motoru</h4>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">Her türlü karmaşık iş kuralını kodlamadan tanımlayın.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2 aspect-video md:aspect-square lg:aspect-video rounded-3xl overflow-hidden shadow-2xl group">
-             <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('/img/solutions/hawk.png');"></div>
-        </div>
-    </div>
-
-    <!-- Section 3: BIAnalytics Raporlama -->
-    <div class="flex flex-col md:flex-row gap-10 items-center">
-        <div class="flex flex-col gap-6 w-full md:w-1/2">
-            <div class="space-y-4">
-                <span class="inline-block py-1 px-3 rounded-lg bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400 text-xs font-bold uppercase tracking-wider">Görsel Zeka</span>
-                <h3 class="text-slate-900 dark:text-white text-3xl font-bold leading-tight md:text-4xl">BIAnalytics ile Veriye Dokunun</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed">Veri sadece sayılardan ibaret değildir; işletmenizin hikayesidir. BIAnalytics raporlama çözümlerimizle, karmaşık veri setlerini anlaşılır, etkileşimli ve estetik dashboardlara dönüştürüyoruz. Stratejik kararlarınızı destekleyen, her seviyeden kullanıcının anlayabileceği görsellik ve derinlikte raporlar sunuyoruz.</p>
-            </div>
-             <ul class="space-y-3">
-                <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
-                    <span class="material-symbols-outlined text-emerald-500">check_circle</span>
-                    <span>İnteraktif ve dinamik dashboardlar</span>
-                </li>
-                <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
-                    <span class="material-symbols-outlined text-emerald-500">check_circle</span>
-                    <span>Self-service raporlama yetenekleri</span>
-                </li>
-                <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
-                    <span class="material-symbols-outlined text-emerald-500">check_circle</span>
-                    <span>Mobil uyumlu ve her yerden erişilebilir</span>
-                </li>
-                 <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300">
-                    <span class="material-symbols-outlined text-emerald-500">check_circle</span>
-                    <span>Otomatik e-posta ve PDF rapor gönderimi</span>
-                </li>
-            </ul>
-        </div>
-        <div class="w-full md:w-1/2 aspect-video md:aspect-square lg:aspect-video rounded-3xl overflow-hidden shadow-2xl group">
-              <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('/img/solutions/report.png');"></div>
-        </div>
-    </div>
-</div>
-
-<div class="bg-white dark:bg-slate-900/50 py-16 md:py-24">
-    <div class="container mx-auto px-4 text-center max-w-3xl space-y-6">
-        <h1 class="text-slate-900 dark:text-white text-3xl font-bold leading-tight md:text-4xl text-center">Projenizi Hayata Geçirmeye Hazır mısınız?</h1>
-        <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">Uzman ekibimizle tanışın ve veri altyapınızı nasıl dönüştürebileceğimizi görüşelim.</p>
-        <div class="flex justify-center pt-4">
-            <a href="/contact" class="flex items-center justify-center h-12 px-8 rounded-xl bg-primary text-white font-bold transition-all hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5">Ücretsiz Danışmanlık Alın</a>
-        </div>
-    </div>
-</div>
