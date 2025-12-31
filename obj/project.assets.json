@@ -2327,11 +2327,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\Sitem.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\Sitem.Web.csproj",
       "projectName": "Sitem.Web",
-      "projectPath": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\Sitem.Web.csproj",
+      "projectPath": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\Sitem.Web.csproj",
       "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\obj\\",
+      "outputPath": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config"

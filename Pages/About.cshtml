@@ -52,8 +52,8 @@
         transform-style: preserve-3d;
     }
     .wow-card:hover {
-        transform: translateY(-15px) rotateX(5deg) rotateY(-5deg);
-        box-shadow: 0 40px 80px -15px rgba(37, 99, 235, 0.15);
+        transform: translateY(-5px) scale(1.01);
+        box-shadow: 0 25px 50px -15px rgba(37, 99, 235, 0.2);
         border-color: var(--p-blue);
     }
 
@@ -391,21 +391,7 @@
     }
 
     // 3D Tilt for Wow Cards
-    document.querySelectorAll('.wow-card').forEach(card => {
-        card.addEventListener('mousemove', e => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = (y - centerY) / 20;
-            const rotateY = (centerX - x) / 20;
-            card.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-15px)`;
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg) translateY(0)`;
-        });
-    });
+    /* Tilt effect removed for corporate look */
 
     // Intersection Observer for Counters
     const observerOptions = {

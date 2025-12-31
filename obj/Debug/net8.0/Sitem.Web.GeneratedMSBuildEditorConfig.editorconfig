@@ -9,95 +9,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Sitem.Web
 build_property.RootNamespace = Sitem.Web
-build_property.ProjectDir = C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın\
+build_property.ProjectDir = C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_6.1_yayın\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_1.3_yayın
+build_property.MSBuildProjectDirectory = C:\Users\Furkan\Desktop\SİTE_1\web_sitem_version_6.1_yayın
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/About.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Blog.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Blog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/BlogDetails.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/BlogDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmxvZ0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Contact.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/EnergySolutions.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/EnergySolutions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5lcmd5U29sdXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Index.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Products.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Products/BIAnalytics.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Products/BIAnalytics.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQklBbmFseXRpY3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Products/Edvars.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Products/Edvars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWR2YXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Products/HawkETL.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Products/HawkETL.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcSGF3a0VUTC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Products/Yemvars.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Products/Yemvars.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcWWVtdmFycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Sectors.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Sectors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VjdG9ycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Shared/_Layout.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Shared/_RevizeLayout.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Shared/_RevizeLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9SZXZpemVMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Solutions.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Solutions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29sdXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Tech/Airflow.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Tech/Airflow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVjaFxBaXJmbG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Tech/HawkEtl.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Tech/HawkEtl.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVjaFxIYXdrRXRsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Tech/Kafka.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Tech/Kafka.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVjaFxLYWZrYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/Tech/Superset.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/Tech/Superset.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVjaFxTdXBlcnNldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/_ViewImports.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_1.3_yayın/Pages/_ViewStart.cshtml]
+[C:/Users/Furkan/Desktop/SİTE_1/web_sitem_version_6.1_yayın/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

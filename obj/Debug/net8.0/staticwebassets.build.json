@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FjZyOQIbVUskuxSv38ctFj2+NMK84GhW7aYhgEQSth0=",
+  "Hash": "I3e0XRMz5O86SkBj6VB4Pj15icSdWsrnGem9sdX5auQ=",
   "Source": "Sitem.Web",
   "BasePath": "_content/Sitem.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Sitem.Web\\wwwroot",
       "Source": "Sitem.Web",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\.gitkeep",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\.gitkeep",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": ".gitkeep",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\.gitkeep"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\airflow.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\airflow.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "airflow.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\airflow.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\arka-plan.mp4",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\arka-plan.mp4",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "arka-plan.mp4",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\arka-plan.mp4"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\bianalytics-logo.svg",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\bianalytics-logo.svg",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "bianalytics-logo.svg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bianalytics-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\hawketl.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\hawketl.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "hawketl.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\hawketl.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\images\\blog\\airflow_kafka.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\images\\blog\\airflow_kafka.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "images/blog/airflow_kafka.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog\\airflow_kafka.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\images\\blog\\bianalytics_benchmark.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\images\\blog\\bianalytics_benchmark.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "images/blog/bianalytics_benchmark.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog\\bianalytics_benchmark.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\images\\blog\\finance_ai.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\images\\blog\\finance_ai.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "images/blog/finance_ai.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog\\finance_ai.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\images\\blog\\hawketl.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\images\\blog\\hawketl.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "images/blog/hawketl.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog\\hawketl.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\images\\blog\\migration.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\images\\blog\\migration.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "images/blog/migration.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog\\migration.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\images\\blog\\superset.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\images\\blog\\superset.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "images/blog/superset.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog\\superset.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\images\\blog\\trafo_ai.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\images\\blog\\trafo_ai.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "images/blog/trafo_ai.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blog\\trafo_ai.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\img\\about\\engineering.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\about\\engineering.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "img/about/engineering.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\img\\about\\engineering.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\img\\about\\etl.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\about\\etl.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "img/about/etl.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\img\\about\\etl.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\img\\about\\kafka.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\about\\kafka.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "img/about/kafka.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\img\\about\\kafka.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\img\\about\\reporting.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\about\\reporting.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "img/about/reporting.png",
       "AssetKind": "All",
@@ -321,10 +321,29 @@
       "OriginalItemSpec": "wwwroot\\img\\about\\reporting.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\img\\solutions\\arch.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\solutions\\arch_corp.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
+      "BasePath": "_content/Sitem.Web",
+      "RelativePath": "img/solutions/arch_corp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\solutions\\arch_corp.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\solutions\\arch.png",
+      "SourceId": "Sitem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "img/solutions/arch.png",
       "AssetKind": "All",
@@ -340,10 +359,29 @@
       "OriginalItemSpec": "wwwroot\\img\\solutions\\arch.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\img\\solutions\\hawk.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\solutions\\hawk_corp.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
+      "BasePath": "_content/Sitem.Web",
+      "RelativePath": "img/solutions/hawk_corp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\solutions\\hawk_corp.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\solutions\\hawk.png",
+      "SourceId": "Sitem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "img/solutions/hawk.png",
       "AssetKind": "All",
@@ -359,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\img\\solutions\\hawk.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\img\\solutions\\report.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\solutions\\report.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "img/solutions/report.png",
       "AssetKind": "All",
@@ -378,10 +416,29 @@
       "OriginalItemSpec": "wwwroot\\img\\solutions\\report.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\kafka.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\img\\solutions\\reporting_corp.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
+      "BasePath": "_content/Sitem.Web",
+      "RelativePath": "img/solutions/reporting_corp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\solutions\\reporting_corp.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\kafka.png",
+      "SourceId": "Sitem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "kafka.png",
       "AssetKind": "All",
@@ -397,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\kafka.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\airflow.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\airflow.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/airflow.png",
       "AssetKind": "All",
@@ -416,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\airflow.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\edvars_logo.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\edvars_logo.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/edvars_logo.png",
       "AssetKind": "All",
@@ -435,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\edvars_logo.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\hawk_etl_icon.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\hawk_etl_icon.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/hawk_etl_icon.png",
       "AssetKind": "All",
@@ -454,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\hawk_etl_icon.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\hawketl.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\hawketl.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/hawketl.png",
       "AssetKind": "All",
@@ -473,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\hawketl.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\ilkfoto.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\ilkfoto.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/ilkfoto.png",
       "AssetKind": "All",
@@ -492,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\ilkfoto.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\kafka.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\kafka.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/kafka.png",
       "AssetKind": "All",
@@ -511,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\kafka.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_bianalytics_3d.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\logo_bianalytics_3d.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/logo_bianalytics_3d.png",
       "AssetKind": "All",
@@ -530,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\logo_bianalytics_3d.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_bianalytics_final.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\logo_bianalytics_final.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/logo_bianalytics_final.png",
       "AssetKind": "All",
@@ -549,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\logo_bianalytics_final.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_bianalytics_new.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\logo_bianalytics_new.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/logo_bianalytics_new.png",
       "AssetKind": "All",
@@ -568,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\logo_bianalytics_new.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_edvars_final.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\logo_edvars_final.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/logo_edvars_final.png",
       "AssetKind": "All",
@@ -587,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\logo_edvars_final.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logo_edvars_new.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\logo_edvars_new.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/logo_edvars_new.png",
       "AssetKind": "All",
@@ -606,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\logo_edvars_new.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\logosuperset.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\logosuperset.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/logosuperset.png",
       "AssetKind": "All",
@@ -625,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\logosuperset.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\raporlama logo.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\raporlama logo.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/raporlama logo.png",
       "AssetKind": "All",
@@ -644,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\raporlama logo.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\raporlama.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\raporlama.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/raporlama.png",
       "AssetKind": "All",
@@ -663,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\raporlama.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\sitelogo.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\sitelogo.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/sitelogo.png",
       "AssetKind": "All",
@@ -682,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\sitelogo.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\superset.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\superset.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/superset.png",
       "AssetKind": "All",
@@ -701,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\superset.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\logo\\yemvars_logo.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\logo\\yemvars_logo.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "logo/yemvars_logo.png",
       "AssetKind": "All",
@@ -720,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\logo\\yemvars_logo.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\menu.mp4",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\menu.mp4",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "menu.mp4",
       "AssetKind": "All",
@@ -739,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\menu.mp4"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\menu2.mp4",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\menu2.mp4",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "menu2.mp4",
       "AssetKind": "All",
@@ -758,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\menu2.mp4"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\menu3.mp4",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\menu3.mp4",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "menu3.mp4",
       "AssetKind": "All",
@@ -777,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\menu3.mp4"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\platform-logo.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\platform-logo.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "platform-logo.png",
       "AssetKind": "All",
@@ -796,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\platform-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\sitelogo.png",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\sitelogo.png",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "sitelogo.png",
       "AssetKind": "All",
@@ -815,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\sitelogo.png"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\templates\\about.html",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\templates\\about.html",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "templates/about.html",
       "AssetKind": "All",
@@ -834,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\about.html"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\templates\\blog.html",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\templates\\blog.html",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "templates/blog.html",
       "AssetKind": "All",
@@ -853,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\blog.html"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\templates\\contact.html",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\templates\\contact.html",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "templates/contact.html",
       "AssetKind": "All",
@@ -872,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\contact.html"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\templates\\index.html",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\templates\\index.html",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "templates/index.html",
       "AssetKind": "All",
@@ -891,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\templates\\products.html",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\templates\\products.html",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "templates/products.html",
       "AssetKind": "All",
@@ -910,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\products.html"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\templates\\sectors.html",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\templates\\sectors.html",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "templates/sectors.html",
       "AssetKind": "All",
@@ -929,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\sectors.html"
     },
     {
-      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\templates\\solutions.html",
+      "Identity": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\templates\\solutions.html",
       "SourceId": "Sitem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_1.3_yayın\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan\\Desktop\\SİTE_1\\web_sitem_version_6.1_yayın\\wwwroot\\",
       "BasePath": "_content/Sitem.Web",
       "RelativePath": "templates/solutions.html",
       "AssetKind": "All",
