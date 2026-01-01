@@ -1,0 +1,528 @@
+@page "/urunler/bianalytics/releases/{version}"
+@{
+    Layout = "_RevizeLayout";
+    var version = RouteData.Values["version"]?.ToString();
+    ViewData["Title"] = $"BIAnalytics {version} - Sürüm Detayları";
+
+    var content = version switch {
+        "1.8" => @"
+            <h1>BIAnalytics 1.08.05 – Stabilizasyon & İyileştirmeler</h1>
+            <p>BIAnalytics 1.08.05 sürümü, önceki sürümlerde eklenen tüm özelliklerin <strong>stabilizasyonu, performans iyileştirmeleri</strong> ve kurumsal kullanım senaryolarına uygun hale getirilmesini hedefleyen bir final sürümüdür.</p>
+            <p>Bu sürüm ile birlikte export altyapıları, cache – refresh etkileşimi ve görsel çıktı kalitesi önemli ölçüde iyileştirilmiştir.</p>
+            <hr/>
+            <h2>Öne Çıkan İyileştirmeler</h2>
+            <ul>
+                <li>CSV export performans artışı</li>
+                <li>Excel header uyumluluğu</li>
+                <li>Markdown tabanlı export makroları</li>
+                <li>Genel performans ve stabilite artışı</li>
+            </ul>
+            <hr/>
+            <h2>CSV Export Performans Artışı</h2>
+            <p>Bu sürümde CSV export altyapısı performans odaklı olarak yeniden ele alınmıştır.</p>
+            <h3>Yapılan Geliştirmeler</h3>
+            <ul>
+                <li>CSV export yönetiminde kullanılan altyapı ve akışlar optimize edilmiştir</li>
+                <li>Gerekli kütüphaneler güncellenmiş ve daha verimli kullanım sağlanmıştır</li>
+                <li>Stream bazlı veri yazma mekanizmaları iyileştirilmiştir</li>
+            </ul>
+            <h3>Kazanımlar</h3>
+            <ul>
+                <li>Büyük dataset’lerde CSV export süresi gözle görülür şekilde kısalmıştır</li>
+                <li>Bellek kullanımı azaltılmıştır</li>
+                <li>Uzun süren export işlemlerinde timeout ve crash riski minimize edilmiştir</li>
+            </ul>
+            <hr/>
+            <h2>Excel Header Uyumluluğu</h2>
+            <p>Bazı table ve pivot chart’larda Excel export sırasında bozuk veya hizasız gelen header problemleri bu sürümde giderilmiştir.</p>
+            <h3>Yapılan İyileştirmeler</h3>
+            <ul>
+                <li>Header üretim mantığı elden geçirilmiştir</li>
+                <li>Çok seviyeli ve gruplu header’lar Excel formatına uygun hale getirilmiştir</li>
+                <li>Table chart görünümü ile Excel çıktısı arasındaki farklar kapatılmıştır</li>
+            </ul>
+            <h3>Sonuç</h3>
+            <ul>
+                <li>Header’lar artık Excel export’ta sorunsuz ve düzenli şekilde görüntülenmektedir</li>
+                <li>Kurumsal raporlama ve sunum senaryoları için daha kaliteli çıktılar elde edilmektedir</li>
+            </ul>
+            <hr/>
+            <h2>Markdown Export Makroları</h2>
+            <p>Bu sürüm ile birlikte dashboard’larda kullanılan <strong>Markdown bileşenleri</strong>, Excel export çıktısını manipüle edebilecek şekilde genişletilmiştir.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Markdown içerisine özel makrolar eklenerek Excel hücreleri üzerinde işlem yapılabilmektedir</li>
+                <li>Bu yapı <strong>modüler ve genişletilebilir</strong> olacak şekilde tasarlanmıştır</li>
+            </ul>
+            <h3>Sağlanan Esneklik</h3>
+            <ul>
+                <li>Excel çıktıları görsel olarak daha zengin hale getirilebilir</li>
+                <li>Kurumsal rapor formatlarına özel düzenlemeler yapılabilir</li>
+                <li>İlerleyen sürümlerde yeni makroların eklenmesi için hazır bir altyapı oluşturulmuştur</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>Büyük dataset’lerde export sırasında oluşan crash problemleri giderildi</li>
+                <li>Refresh interval ile cache mekanizması arasındaki çakışmalar çözüldü</li>
+                <li>Yetki (RBAC) cache senkronizasyonunda yaşanan tutarsızlıklar giderildi</li>
+                <li>Export ve refresh işlemlerinde nadir görülen yarış durumları (race condition) düzeltildi</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.08.05 sürümü ile birlikte platform, <strong>özellik seti tamamlanmış, stabil ve kurumsal kullanıma hazır</strong> bir BI ve raporlama ürünü haline gelmiştir.</p>
+        ",
+        "1.7" => @"
+            <h1>BIAnalytics 1.7.0 – Refresh & Scheduling</h1>
+            <p>BIAnalytics 1.7.0 sürümü, dashboard’ların <strong>yenilenme (refresh) ve cache yönetimi</strong> konularını kurumsal ölçekte ele alan önemli bir stabilizasyon ve kontrol sürümüdür.</p>
+            <p>Bu sürüm ile birlikte otomatik refresh mekanizmaları daha kararlı hale getirilmiş ve kullanıcılara <strong>zamanlama üzerinde tam kontrol</strong> sağlanmıştır.</p>
+            <hr/>
+            <h2>Öne Çıkan Yenilikler</h2>
+            <ul>
+                <li>Otomatik refresh stabilizasyonu</li>
+                <li>Cron bazlı refresh interval desteği</li>
+                <li>Saat / tarih bazlı dashboard yenileme</li>
+                <li>Cache yenileme süreçlerinde kontrol ve öngörülebilirlik</li>
+            </ul>
+            <hr/>
+            <h2>Otomatik Refresh Stabilizasyonu</h2>
+            <p>Bu sürüm ile birlikte dashboard’ların belirli periyotlarla otomatik olarak yenilenmesi ve cache’e kaydedilmesi stabil hale getirilmiştir.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Dashboard’lar: Tanımlı periyotlarda Otomatik olarak refresh edilir</li>
+                <li>Refresh işlemi sonrası: Güncel dashboard verisi Redis cache’e kaydedilir</li>
+                <li>Kullanıcılar dashboard’u açtığında: En son yenilenmiş Hazır cache üzerinden hızlıca görüntüler</li>
+            </ul>
+            <h3>Kazanımlar</h3>
+            <ul>
+                <li>Kullanıcılar manuel refresh ihtiyacı duymadan güncel verilere erişir</li>
+                <li>Cache her zaman kontrollü şekilde güncel tutulur</li>
+                <li>Yoğun kullanılan dashboard’larda performans ve tutarlılık sağlanır</li>
+            </ul>
+            <hr/>
+            <h2>Cron Bazlı Refresh Interval</h2>
+            <p>Bu sürüm ile dashboard cache yenileme mekanizması, <strong>kullanıcı tarafından tanımlanabilir</strong> hale getirilmiştir.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Kullanıcılar dashboard için: Cron formatında Saat, gün, tarih bazlı yenileme tanımı yapabilir</li>
+                <li>Örnek senaryolar: Her gün saat 09:00’da yenile, Haftada bir pazartesi yenile, Ayın ilk günü cache’i güncelle</li>
+                <li>Cron tanımı sayesinde: İş saatleri dışında Sistem yükü düşükken refresh işlemleri yapılabilir</li>
+            </ul>
+            <h3>Kazanımlar</h3>
+            <ul>
+                <li>Cache yenileme tamamen kontrol altına alınır</li>
+                <li>Gereksiz refresh ve sorgu çalışmaları engellenir</li>
+                <li>Kurumsal planlama ve operasyon süreçleriyle uyumlu bir yapı sağlanır</li>
+            </ul>
+            <hr/>
+            <h2>Saat / Tarih Bazlı Yenileme</h2>
+            <p>Cron bazlı yapı sayesinde: Sadece periyot değil <strong>Belirli tarih ve saatler</strong> için de refresh planlaması yapılabilir. Özel raporlama dönemleri için (ay sonu, çeyrek kapanışı vb.) hedefli cache yenileme mümkündür.</p>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>Refresh interval ayarlarının kendini resetlemesine neden olan problem giderildi</li>
+                <li>Arka arkaya tetiklenen refresh işlemleri engellendi</li>
+                <li>Aynı dashboard için eş zamanlı refresh çakışmaları çözüldü</li>
+                <li>Cache yenileme sırasında oluşabilen tutarsız durumlar giderildi</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.7.0 sürümü ile birlikte platform, dashboard yenileme ve cache yönetimi konusunda <strong>öngörülebilir, kontrollü ve kurumsal</strong> bir yapıya kavuşmuştur.</p>
+        ",
+        "1.6" => @"
+            <h1>BIAnalytics 1.6.0 – Cache & Performance</h1>
+            <p>BIAnalytics 1.6.0 sürümü, platformun <strong>performans, ölçeklenebilirlik ve kullanıcı deneyimi</strong> odaklı olarak güçlendirildiği bir sürümdür.</p>
+            <p>Bu sürüm ile birlikte Redis tabanlı cache mimarisi derinlemesine entegre edilmiş ve dashboard, filtre ve sorgu performansı önemli ölçüde iyileştirilmiştir.</p>
+            <hr/>
+            <h2>Öne Çıkan Yenilikler</h2>
+            <ul>
+                <li>Redis tabanlı dashboard cache</li>
+                <li>Filter state cache (filtre durumları)</li>
+                <li>Query sonuç cache (sorgu çıktıları)</li>
+                <li>Çok kullanıcılı ortamlarda performans artışı</li>
+            </ul>
+            <hr/>
+            <h2>Redis Dashboard Cache</h2>
+            <p>Bu sürüm ile birlikte dashboard’lar, <strong>Redis cache</strong> kullanılarak belirli periyotlarla önbelleğe alınmaktadır.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Dashboard ilk yüklendiğinde: Oluşturulan layout, Chart konfigürasyonları, İlk veri setleri cache’e kaydedilir</li>
+                <li>Sonraki açılışlarda dashboard: Cache üzerinden Çok daha hızlı şekilde yüklenir</li>
+                <li>Cache süreleri ve davranışları konfigürasyon üzerinden yönetilebilir</li>
+            </ul>
+            <h3>Kazanımlar</h3>
+            <ul>
+                <li>Dashboard açılış süreleri ciddi oranda kısalır</li>
+                <li>Backend üzerindeki sorgu yüku azalır</li>
+                <li>Kullanıcı deneyimi özellikle yoğun kullanılan dashboard’larda belirgin şekilde iyileşir</li>
+            </ul>
+            <hr/>
+            <h2>Filter State Cache (Filtre Durumu Cache)</h2>
+            <p>Dashboard filtreleri de bu sürüm ile birlikte cache kapsamına alınmıştır.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Kullanıcı tarafından seçilen filtre değerleri Redis üzerinde cache’e kaydedilir</li>
+                <li>Aynı dashboard tekrar açıldığında: Filtreler anında yüklenir, Yeniden hesaplama yapılmaz</li>
+                <li>Filtre değişiklikleri cache invalidation mekanizması ile kontrollü şekilde güncellenir</li>
+            </ul>
+            <h3>Kazanımlar</h3>
+            <ul>
+                <li>Filtreli dashboard’larda gecikmeler ortadan kalkar</li>
+                <li>Kullanıcılar dashboard’ları kaldıkları yerden hızlıca kullanabilir</li>
+                <li>Özellikle çok sayıda filtre içeren dashboard’larda performans farkı net şekilde hissedilir</li>
+            </ul>
+            <hr/>
+            <h2>Query Sonuç Cache</h2>
+            <p>Kullanıcılar tarafından çalıştırılan sorguların sonuçları da Redis cache’e alınmıştır.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Aynı sorgu tekrar çalıştırıldığında: Backend sorgu çalıştırılmaz, Cache’den sonuç döndürülür</li>
+                <li>Cache: Kullanıcı, Dataset, Filtre kombinasyonlarına göre ayrıştırılır</li>
+                <li>Cache süreleri konfigürasyon ile yönetilebilir</li>
+            </ul>
+            <h3>Kazanımlar</h3>
+            <ul>
+                <li>Veritabanı üzerindeki yük azalır</li>
+                <li>Aynı veriye tekrar tekrar sorgu atılması engellenir</li>
+                <li>Özellikle yoğun saatlerde sistem daha stabil çalışır</li>
+            </ul>
+            <hr/>
+            <h2>Çok Kullanıcılı Ortam Performansı</h2>
+            <p>Redis cache entegrasyonu sayesinde: Aynı dashboard’u açan çok sayıda kullanıcı sistemi yavaşlatmaz. Eş zamanlı kullanıcı sayısı arttıkça performans düşüşü minimumda tutulur.</p>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>İlk dashboard açılışında yaşanan yavaş yüklenme problemi giderildi</li>
+                <li>Aynı anda çok sayıda kullanıcının dashboard açması durumunda oluşan performans sorunları çözüldü</li>
+                <li>Cache invalidation sırasında nadiren yaşanan senkronizasyon hataları düzeltildi</li>
+                <li>Redis bağlantı kopmalarında fallback mekanizmaları iyileştirildi</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.6.0 sürümü ile birlikte platform, <strong>yüksek performanslı, ölçeklenebilir ve kurumsal kullanım için hazır</strong> bir mimariye kavuşmuştur.</p>
+        ",
+        "1.5" => @"
+            <h1>BIAnalytics 1.5.0 – Alerts & Reports (PDF)</h1>
+            <p>BIAnalytics 1.5.0 sürümü ile birlikte platform, kurumsal raporlama ihtiyaçlarının en önemli bileşenlerinden biri olan <strong>zamanlanmış raporlar, PDF export ve otomatik e-posta gönderimi</strong> yeteneklerini kazanmıştır.</p>
+            <p>Bu sürüm, BIAnalytics’i sadece interaktif bir analiz aracı olmaktan çıkarıp, <strong>otomatik rapor üreten bir kurumsal raporlama platformu</strong> haline getirmiştir.</p>
+            <hr/>
+            <h2>Öne Çıkan Yenilikler</h2>
+            <ul>
+                <li>Dashboard PDF export</li>
+                <li>E-posta ile otomatik rapor gönderimi</li>
+                <li>Çok sekmeli dashboard’lar için tek PDF üretimi</li>
+                <li>Yüksek çözünürlüklü PDF render altyapısı</li>
+            </ul>
+            <hr/>
+            <h2>Dashboard PDF Export</h2>
+            <p>Bu sürüm ile birlikte dashboard’lar <strong>PDF formatında export</strong> alınabilmektedir.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Dashboard ekranı birebir korunarak PDF oluşturulur</li>
+                <li>Grafikler, tablolar ve filtreler PDF çıktısına yansıtılır</li>
+                <li>PDF çıktıları: Sunum, Arşivleme, E-posta ile paylaşım senaryoları için uygundur</li>
+            </ul>
+            <hr/>
+            <h2>E-Posta ile Otomatik Gönderim</h2>
+            <p>BIAnalytics 1.5.0 sürümünde otomatik rapor gönderim altyapısı önemli ölçüde geliştirilmiştir.</p>
+            <h3>Yapılan Geliştirmeler</h3>
+            <ul>
+                <li><strong>Celery Beat</strong> altyapısı güncellenmiştir</li>
+                <li>Zamanlanmış görevler daha stabil hale getirilmiştir</li>
+                <li>E-posta ile gönderilen PDF’ler: Dashboard’un tamamını kapsayacak şekilde, Kırpılma olmadan, Orijinal boyutları korunarak oluşturulmaktadır</li>
+            </ul>
+            <h3>Seçilebilir İçerik</h3>
+            <ul>
+                <li>Dashboard içerisinde bulunan tab’ler: Tek tek, İstenilen kombinasyonlarla seçilerek PDF içine eklenebilir</li>
+            </ul>
+            <h3>Görsel Kalite İyileştirmeleri</h3>
+            <ul>
+                <li>PDF içerisindeki grafik ve tabloların <strong>çözünürlük kalitesi artırılmıştır</strong></li>
+                <li>Font ve ikon netliği iyileştirilmiştir</li>
+            </ul>
+            <hr/>
+            <h2>Çok Sekmeli Dashboard’lar Tek PDF</h2>
+            <p>BIAnalytics dashboard’ları bir veya birden fazla sekmeden (tab) oluşabilmektedir.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Cok sekmeli dashboard’lar: Tek PDF, Seçili tab’lerin birleştirilmesi şeklinde export alınabilir</li>
+                <li>Her tab PDF içerisinde: Ayrı sayfa, Ayrı bölüm olarak yer alır</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Altyapı ve Gereksinimler</h2>
+            <ul>
+                <li><strong>Celery</strong> (worker & beat)</li>
+                <li><strong>Redis</strong> (task queue & cache)</li>
+                <li><strong>SMTP yapılandırması</strong> (e-posta gönderimi için)</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>PDF render sırasında oluşan font kaymaları giderildi</li>
+                <li>Uzun dashboard’larda yaşanan sayfa kesilme problemleri çözüldü</li>
+                <li>Çok sekmeli dashboard’larda PDF sıralama hataları düzeltildi</li>
+                <li>Zamanlanmış görevlerde nadir görülen tetiklenmeme problemi giderildi</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.5.0 sürümü ile birlikte platform, <strong>otomatik, zamanlanmış ve paylaşılabilir raporlar</strong> üreten tam kapsamlı bir kurumsal BI çözümüne dönüşmüştür.</p>
+        ",
+        "1.4" => @"
+            <h1>BIAnalytics 1.4.0 – Folder Bazlı Yönetim</h1>
+            <p>BIAnalytics 1.4.0 sürümü ile birlikte platformun <strong>içerik yönetimi ve kullanıcı deneyimi</strong> temelden ele alınmıştır.</p>
+            <p>Bu sürümün ana odağı; dashboard’ların <strong>folder (klasör) bazlı</strong> yönetilebilmesi ve Home Page’in kurumsal kullanım senaryolarına uygun şekilde yeniden tasarlanmasıdır.</p>
+            <hr/>
+            <h2>Öne Çıkan Yenilikler</h2>
+            <ul>
+                <li>Folder tabanlı dashboard yönetimi</li>
+                <li>Rol bazlı folder ve dashboard görünürlüğü</li>
+                <li>Yeniden tasarlanmış, özelleştirilmiş Home Page</li>
+                <li>Dashboard başlıklarında folder path gösterimi</li>
+            </ul>
+            <hr/>
+            <h2>Folder Tabanlı Dashboard Yönetimi</h2>
+            <p>Bu sürüm ile birlikte BIAnalytics’te dashboard yönetimi <strong>folder (klasör) yapısı</strong> üzerinden gerçekleştirilmektedir.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Home Page tamamen yeniden tasarlanarak folder yapısı eklenmiştir</li>
+                <li>Kullanıcılar: İstedikleri kadar folder oluşturabilir, Folder’ları düzenleyebilir, Folder hiyerarşisini özgürce yönetebilir</li>
+                <li>Folder yapısı <strong>sınırsız derinlikte</strong> olacak şekilde tasarlanmıştır</li>
+            </ul>
+            <h3>Rol Bazlı Görünürlük</h3>
+            <ul>
+                <li>Folder’lar and dashboard’lar <strong>kullanıcı rol ve yetkilerine göre</strong> gösterilmektedir</li>
+                <li>Bu yetkilendirme yapısı <strong>Admin Panel</strong> üzerinden yönetilmektedir</li>
+            </ul>
+            <h3>Kazanımlar</h3>
+            <ul>
+                <li>Kurumsal içerik karmaşası ortadan kalkar</li>
+                <li>Kullanıcılar sadece yetkili oldukları raporları görür</li>
+                <li>Büyük organizasyonlarda rapor yönetimi sürdürülebilir hale gelir</li>
+            </ul>
+            <hr/>
+            <h2>Özel Home Page Yapısı</h2>
+            <p>Bu sürüm ile birlikte BIAnalytics Home Page tamamen yeniden ele alınmış ve geliştirilmiştir.</p>
+            <h3>Yapılan Geliştirmeler</h3>
+            <ul>
+                <li>Home Page tasarımı modernize edilmiştir</li>
+                <li>Folder yapısı merkezde konumlandırılmıştır</li>
+                <li>Kullanıcılar giriş yaptıklarında: Kendi yetkilerine uygun folder’ları, İlgili dashboard’ları doğrudan görüntüler</li>
+            </ul>
+            <hr/>
+            <h2>Folder Path Gösterimi</h2>
+            <p>Bu sürümle birlikte dashboard başlık alanına <strong>folder path bilgisi</strong> eklenmiştir.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Açık olan dashboard’un: Hangi folder’dan geldiği, Hangi hiyerarşi altında bulunduğu net şekilde gösterilir</li>
+                <li>Örnek gösterim: Finans / Aylık Raporlar / Gelir Analizi</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>Yetkisiz kullanıcıların bazı dashboard’ları görebilmesine neden olan erişim problemi giderildi</li>
+                <li>Folder silme işlemi sonrası oluşan orphan (bağlantısız) kayıtlar otomatik temizlenecek şekilde düzenlendi</li>
+                <li>Folder – dashboard ilişkisinde senkronizasyon problemleri giderildi</li>
+                <li>Home Page yüklenme performansı iyileştirildi</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.4.0 sürümü ile birlikte platform, dashboard’ların sadece üretildiği değil, <strong>kurumsal ölçekte yönetildiği</strong> bir yapıya kavuşmuştur.</p>
+        ",
+        "1.3" => @"
+            <h1>BIAnalytics 1.3.0 – Table Chart Geliştirmeleri</h1>
+            <p>BIAnalytics 1.3.0 sürümü, özellikle <strong>Table Chart</strong> kullanan kurumsal raporlar için kapsamlı görsel, fonksiyonel ve performans odaklı geliştirmeler içermektedir.</p>
+            <p>Bu sürüm ile birlikte tablo bazlı raporlar; daha okunabilir, daha esnek ve çok büyük veri setleriyle çalışabilir hale gelmiştir.</p>
+            <hr/>
+            <h2>Öne Çıkan Yenilikler</h2>
+            <ul>
+                <li>Tekrarlayan satırlar için <strong>Row Grouping</strong></li>
+                <li>Sütun bazlı <strong>otomatik toplam (Columns Total)</strong></li>
+                <li><strong>Yatay (Reverse) tablo görünümü</strong></li>
+                <li>Çok seviyeli başlık ve header yapıları</li>
+                <li>Büyük veri setleri için <strong>Sayfalama (Pagination)</strong></li>
+                <li>Excel export ile birebir görsel uyum</li>
+            </ul>
+            <hr/>
+            <h2>Row Grouping (Tekrarlayan Satır Gruplama)</h2>
+            <p>Bu özellik, tablo içerisinde <strong>birbirini tekrar eden satırların</strong> gruplanarak daha sade ve okunabilir bir yapı sunmasını sağlar.</p>
+            <h3>Özellik Detayları</h3>
+            <ul>
+                <li>Aynı değerlere sahip satırlar: Tek satır, Tek hücre şeklinde gruplanabilir</li>
+                <li>Gruplanan satırlar dashboard üzerinde daha kompakt bir görünüm sunar</li>
+                <li>Aynı gruplama yapısı <strong>Excel export çıktısına</strong> birebir yansıtılır</li>
+            </ul>
+            <hr/>
+            <h2>Columns Total (Otomatik Sütun Toplamları)</h2>
+            <p>Bu sürüm ile birlikte istenilen kolonlar için <strong>otomatik toplam (total) satırı</strong> eklenebilmiştir.</p>
+            <hr/>
+            <h2>Reverse Table (Yatay Tablo Görünümü)</h2>
+            <p>Bazı raporlama senaryolarında, satır ve kolonların yer değiştirmesi gerekebilmektedir.</p>
+            <hr/>
+            <h2>Pagination (Sayfalama Desteği)</h2>
+            <p>Bu sürümün <strong>en kritik ve performans odaklı özelliği</strong> sayfalama (pagination) altyapısıdır.</p>
+            <h3>Performans Kazanımı</h3>
+            <ul>
+                <li>Çok büyük veri setleri (örneğin <strong>yüz milyonlarca satır</strong>) dashboard ekranında görüntülenebilir</li>
+                <li>Bellek tüketimi minimize edilir</li>
+                <li>Dashboard açılış süreleri ciddi oranda düşer</li>
+                <li>500 milyon satırlık tablolar dahi pratik şekilde analiz edilebilir</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>Pivot Table export ile dashboard görünümü arasındaki uyumsuzluk giderildi</li>
+                <li>Çok kolonlu tabloların Excel’de bozulmasına neden olan sorunlar çözüldü</li>
+                <li>Pagination aktifken filtre değişimlerinde yaşanan senkronizasyon sorunları düzeltildi</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.3.0, Table Chart’ları sadece bir görselleştirme aracı olmaktan çıkararak, <strong>yüksek hacimli kurumsal veri analizleri</strong> için güçlü ve ölçeklenebilir bir raporlama bileşeni haline getirmiştir.</p>
+        ",
+        "1.2" => @"
+            <h1>BIAnalytics 1.2.0 – Gelişmiş Export Yetenekleri</h1>
+            <p>BIAnalytics 1.2.0 sürümü, platformun <strong>veri dışa aktarma (export)</strong> kabiliyetlerini önemli ölçüde genişletmiştir.</p>
+            <p>Bu sürüm ile birlikte kullanıcılar; dashboard seviyesinde daha esnek Excel export alabilir, chart bazında <strong>tam veri (full data) CSV export</strong> işlemlerini kontrollü ve performanslı şekilde gerçekleştirebilir.</p>
+            <hr/>
+            <h2>Öne Çıkan Yenilikler</h2>
+            <ul>
+                <li>Seçilebilir chart bazlı Excel export</li>
+                <li>Dataset’in tamamını kapsayan Full Data CSV export</li>
+                <li>Kullanıcı kontrollü kolon, metric ve limit seçimi</li>
+                <li>Büyük veri setleri için optimize edilmiş export altyapısı</li>
+            </ul>
+            <hr/>
+            <h2>Dashboard Export (v2 – Seçilebilir Grafikler)</h2>
+            <p>Bu özellik, dashboard içerisinde yer alan chart’ların <strong>ayrı ayrı veya seçilerek</strong> export alınabilmesi amacıyla geliştirilmiştir.</p>
+            <hr/>
+            <h2>Full Data CSV Export</h2>
+            <p>Bu özellik ile birlikte BIAnalytics, standart chart export sınırlarının ötesine geçmiştir. Chart üzerinde <strong>gösterilmeyen</strong> ancak dataset içerisinde tanımlı olan tüm alanlar export edilebilir hale gelmiştir.</p>
+            <h3>Kullanım Senaryosu</h3>
+            <ul>
+                <li>Dashboard’ta özet olarak görülen verinin <strong>ham ve detaylı halini</strong> analiz veya arşivleme amacıyla CSV formatında alabilir.</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Altyapı ve Gereksinimler</h2>
+            <ul>
+                <li>`pandas` – veri işleme ve kolon yönetimi</li>
+                <li>`pyarrow` – yüksek performanslı veri aktarımı</li>
+                <li><strong>Stream-based CSV writer</strong> - Bellek kullanımını minimize eder.</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>Memory leak problemleri giderildi</li>
+                <li>Türkçe karakter sorunları çözüldü (UTF-8 encoding)</li>
+                <li>Timeout ve bağlantı kopma problemleri azaltıldı</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.2.0, platformu <strong>kurumsal veri dışa aktarma ve analiz ihtiyaçlarına</strong> doğrudan cevap veren bir BI çözümü haline getirmiştir.</p>
+        ",
+        "1.1" => @"
+            <h1>BIAnalytics 1.1.0 – Dashboard Export (v1)</h1>
+            <p>Bu sürüm ile BIAnalytics, kurumsal raporlama süreçlerinin en kritik ihtiyaçlarından biri olan <strong>Excel export</strong> yeteneklerini ilk kez ürün seviyesinde sunmaktadır.</p>
+            <p>Dashboard üzerinde oluşturulan raporların veri içeriği, görsel düzeni, kolon yapısı ve filtre sonuçlarının Excel çıktısına <strong>birebir ve tutarlı</strong> şekilde yansıtılması hedeflenmiştir.</p>
+            <hr/>
+            <h2>Yeni Özellikler</h2>
+            <h3>Dashboard Export (v1)</h3>
+            <ul>
+                <li>Dashboard içerisindeki tüm Table chart’lar otomatik algılanır ve <strong>ayrı bir sheet</strong> olarak oluşturulur.</li>
+                <li>Sayfadaki filtreler export sırasında otomatik olarak dikkate alınır.</li>
+                <li>Sayısal formatlar ve kolon sıraları rapor görünümüyle uyumludur.</li>
+            </ul>
+            <hr/>
+            <h2>Excel Uyumlu Veri ve Tasarım</h2>
+            <ul>
+                <li>Uzun metinler için otomatik genişlik ayarlamaları.</li>
+                <li>Excel formülleri ve toplam hesaplarıyla uyumlu sayısal formatlar.</li>
+            </ul>
+            <hr/>
+            <h2>Teknik Düzenlemeler ve Fixler</h2>
+            <ul>
+                <li>Timeout problemleri giderildi.</li>
+                <li>Eksik sheet oluşması ve yanlış kolon eşleşmesi gibi tutarsızlıklar giderildi.</li>
+            </ul>
+        ",
+        "1.0" => @"
+            <h1>BIAnalytics 1.0.0 – İlk Kurumsal (Enterprise) Sürüm</h1>
+            <p>BIAnalytics 1.0.0, platformun <strong>ilk resmi ve kurumsal kullanıma hazır</strong> sürümüdür. Güvenlik, performans ve mimari açıdan <strong>ürünleşmiş bir BI platformu</strong> haline gelmiştir.</p>
+            <hr/>
+            <h2>Öne Çıkan Başlıklar</h2>
+            <ul>
+                <li>Kurumsal seviye güvenlik ve erişim kontrolü</li>
+                <li>Asenkron işlem mimarisi (yüksek performanslı sorgular)</li>
+                <li>Redis tabanlı cache altyapısı</li>
+                <li>Gelişmiş export ve zamanlama özellikleri için temel altyapı</li>
+            </ul>
+            <hr/>
+            <h2>Güvenlik ve Erişim Kontrolü</h2>
+            <h3>Role Based Access Control (RBAC)</h3>
+            <ul>
+                <li>Dashboard, chart ve dataset seviyesinde rol bazlı yetkilendirme.</li>
+                <li>Kurumsal organizasyon yapıları ile uyumlu erişim modeli.</li>
+            </ul>
+            <h3>LDAP Kimlik Doğrulama</h3>
+            <ul>
+                <li>Merkezi kullanıcı ve rol yönetimi için kurumsal dizin servisleri entegrasyonu.</li>
+            </ul>
+            <hr/>
+            <h2>Çekirdek Platform Yetenekleri</h2>
+            <h3>Asenkron İşlem Mimarisi (Celery)</h3>
+            <ul>
+                <li>Uzun süren sorgular arka planda çalıştırılır, kullanıcı arayüzü bloklanmaz.</li>
+            </ul>
+            <h3>Redis Cache Entegrasyonu</h3>
+            <ul>
+                <li>Dashboard açılış süreleri optimize edildi, sorgu sonuçları cache üzerinden yönetilir.</li>
+            </ul>
+            <hr/>
+            <p>BIAnalytics 1.0.0, <strong>kurumsal, sürdürülebilir ve ürünleşmiş</strong> bir BI platformuna geçişi temsil eder.</p>
+        ",
+        _ => null
+    };
+}
+
+@if (content == null)
+{
+    <div class="pt-40 pb-20 text-center">
+        <h1 class="text-4xl font-bold">Sürüm bulunamadı.</h1>
+        <a href="/urunler/bianalytics/releases" class="text-blue-600 mt-4 block">Tüm sürümlere dön</a>
+    </div>
+}
+else
+{
+    <style>
+        .doc-view h1 { font-size: 2.5rem; font-weight: 900; color: #0f172a; margin-bottom: 2rem; letter-spacing: -0.025em; }
+        .doc-view h2 { font-size: 1.75rem; font-weight: 800; color: #1e293b; margin-top: 3rem; margin-bottom: 1.5rem; }
+        .doc-view h3 { font-size: 1.25rem; font-weight: 700; color: #334155; margin-top: 2rem; margin-bottom: 1rem; }
+        .doc-view p { font-size: 1.125rem; line-height: 1.8; color: #475569; margin-bottom: 1.5rem; }
+        .doc-view ul { list-style: none; padding-left: 0; margin-bottom: 2rem; }
+        .doc-view li { position: relative; padding-left: 1.75rem; margin-bottom: 0.75rem; font-size: 1.125rem; color: #475569; line-height: 1.6; }
+        .doc-view li::before { content: "•"; position: absolute; left: 0; color: #3b82f6; font-weight: bold; font-size: 1.5rem; line-height: 1.2; }
+        .doc-view hr { border: 0; border-top: 1px solid #e2e8f0; margin: 3rem 0; }
+        .doc-view strong { color: #0f172a; font-weight: 700; }
+        
+        .dark .doc-view h1 { color: #f8fafc; }
+        .dark .doc-view h2 { color: #f1f5f9; }
+        .dark .doc-view h3 { color: #e2e8f0; }
+        .dark .doc-view p, .dark .doc-view li { color: #94a3b8; }
+        .dark .doc-view strong { color: #f8fafc; }
+        .dark .doc-view hr { border-color: #1e293b; }
+
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; color: #64748b; font-weight: 600; font-size: 0.875rem; margin-bottom: 2rem; transition: color 0.2s; }
+        .back-btn:hover { color: #2563eb; }
+    </style>
+
+    <div class="bg-white dark:bg-slate-950 pt-32 pb-24 min-h-screen">
+        <div class="max-w-4xl mx-auto px-4">
+            <a href="/urunler/bianalytics/releases" class="back-btn">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                TÜM SÜRÜMLERE DÖN
+            </a>
+
+            <div class="doc-view">
+                @Html.Raw(content)
+            </div>
+
+            <div class="mt-20 pt-10 border-t border-slate-100 dark:border-slate-800 text-center">
+                <a href="/urunler/bianalytics" class="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-2xl hover:scale-105 transition-all shadow-xl">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                    BIAnalytics'i Şimdi Deneyin
+                </a>
+            </div>
+        </div>
+    </div>
+}

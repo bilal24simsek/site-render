@@ -16,8 +16,12 @@
                 BIAnalytics ile sektördeki rakiplerinizden <strong>100 kat daha hızlı</strong> filtreleme yapın. Limitsiz CSV dışa aktarım ve 50+ konnektör ile veriniz üzerindeki tüm sınırları kaldırın.
             </p>
             <div class="flex flex-wrap gap-4">
-                <button onclick="document.getElementById('demoLauncher').click()" class="px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-2xl hover:scale-105 transition-all">Ücretsiz Deneyin</button>
+                <a href="http://demo.bianalytics.com.tr/" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-2xl hover:scale-105 transition-all">Ücretsiz Deneyin</a>
                 <a href="#features" class="px-8 py-4 bg-blue-50 dark:bg-blue-900/10 text-blue-600 dark:text-blue-400 font-bold rounded-2xl hover:bg-blue-100 transition-all">Özellikleri İncele</a>
+                <a href="/urunler/bianalytics/releases" class="px-8 py-4 flex items-center gap-2 text-slate-500 dark:text-slate-400 font-bold rounded-2xl hover:text-blue-600 dark:hover:text-blue-400 transition-all border border-transparent hover:border-blue-500/20">
+                    <span class="material-symbols-outlined text-xl">history</span>
+                    Sürüm Geçmişi
+                </a>
             </div>
         </div>
 
@@ -86,42 +90,99 @@
 @* Features Section *@
 <section id="features" class="py-24 bg-slate-50 dark:bg-slate-900/50">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white dark:bg-slate-900 p-10 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 hover:border-blue-500/30 transition-all group">
-                <span class="material-symbols-outlined text-4xl text-blue-500 mb-6 bg-blue-500/10 w-16 h-16 flex items-center justify-center rounded-2xl">grid_view</span>
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Sürükle-Bırak Dashboard</h3>
-                <p class="text-slate-500 dark:text-slate-400">Teknik bilgiye ihtiyaç duymadan, görsel kütüphanemizden seçim yapın ve kendi raporlarınızı saniyeler içinde tasarlayın.</p>
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Özellikler</h2>
+            <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">BIAnalytics ile verilerinizi görselleştirin, analiz edin ve raporlayın.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            @* Card 1: Gelişmiş Dashboard Export *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-blue-500 mb-4 bg-gradient-to-br from-blue-500/20 to-blue-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">file_download</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Gelişmiş Dashboard Export</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard içerisinde yer alan tüm raporlar tek bir Excel dosyası olarak indirilebilir. Chart'ları tek tek veya seçerek export alma esnekliği.</p>
             </div>
-            <div class="bg-white dark:bg-slate-900 p-10 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 hover:border-blue-500/30 transition-all group">
-                <span class="material-symbols-outlined text-4xl text-indigo-500 mb-6 bg-indigo-500/10 w-16 h-16 flex items-center justify-center rounded-2xl">hub</span>
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Evrensel Konnektör</h3>
-                <p class="text-slate-500 dark:text-slate-400">Excel'den SAP'ye, Google Analytics'ten özel veritabanlarına kadar her türlü kaynaktan veri çekin.</p>
+
+            @* Card 2: Sürükle-Bırak Dashboard Tasarımı *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-indigo-500 mb-4 bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">dashboard_customize</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Sürükle-Bırak Dashboard Tasarımı</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Teknik bilgiye ihtiyaç duymadan görsel bileşen kütüphanesinden seçim yaparak saniyeler içinde kişisel raporlar ve dashboard'lar tasarlayın.</p>
             </div>
-            <div class="bg-white dark:bg-slate-900 p-10 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 hover:border-blue-500/30 transition-all group">
-                <span class="material-symbols-outlined text-4xl text-purple-500 mb-6 bg-purple-500/10 w-16 h-16 flex items-center justify-center rounded-2xl">notifications_active</span>
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Akıllı Uyarı Sistemi</h3>
-                <p class="text-slate-500 dark:text-slate-400">Belirlediğiniz eşik değerler aşıldığında e-posta veya mobil üzerinden anlık bildirimler alın.</p>
+
+            @* Card 3: Evrensel Veri Konnektörleri *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-purple-500 mb-4 bg-gradient-to-br from-purple-500/20 to-purple-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">hub</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Evrensel Veri Konnektörleri</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Excel, SAP, Google Analytics ve özel veritabanları dahil her türlü veri kaynağı ile entegre çalışır. Farklı sistemlerden veriler tek platformda.</p>
             </div>
-        @* DWH Process Steps from Image 30 *@
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-4" data-aos="fade-up">
-            <div class="flex flex-col items-center text-center p-6 bg-blue-500/5 rounded-3xl border border-blue-500/10">
-                <span class="material-symbols-outlined text-3xl text-blue-500 mb-2">storage</span>
-                <span class="text-xs font-black uppercase text-slate-400 mb-1 tracking-widest">Adım 01</span>
-                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Big Data Storage</h4>
+
+            @* Card 4: Alerts & Zamanlanmış Raporlama *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-amber-500 mb-4 bg-gradient-to-br from-amber-500/20 to-amber-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">notifications_active</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Alerts & Zamanlanmış Raporlama</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Kurumsal raporlama ihtiyaçlarının temel bileşenlerinden biri olan zamanlanmış raporlar, PDF export ve otomatik e-posta gönderimi.</p>
             </div>
-            <div class="flex flex-col items-center text-center p-6 bg-indigo-500/5 rounded-3xl border border-indigo-500/10">
-                <span class="material-symbols-outlined text-3xl text-indigo-500 mb-2">join_inner</span>
-                <span class="text-xs font-black uppercase text-slate-400 mb-1 tracking-widest">Adım 02</span>
-                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Data Integration</h4>
+
+            @* Card 5: Full Data CSV Export *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-emerald-500 mb-4 bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">csv</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Full Data CSV Export</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Chart üzerinde gösterilmeyen ancak dataset içerisinde tanımlı olan tüm alanlar, eksiksiz şekilde CSV formatında export edilebilir.</p>
             </div>
-            <div class="flex flex-col items-center text-center p-6 bg-purple-500/5 rounded-3xl border border-purple-500/10">
-                <span class="material-symbols-outlined text-3xl text-purple-500 mb-2">analytics</span>
-                <span class="text-xs font-black uppercase text-slate-400 mb-1 tracking-widest">Adım 03</span>
-                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Analytical Operations</h4>
+
+            @* Card 6: LDAP Authentication & RBAC *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-red-500/50 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-red-500 mb-4 bg-gradient-to-br from-red-500/20 to-red-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">admin_panel_settings</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">LDAP Authentication & RBAC</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">LDAP entegrasyonu ile kurumsal kimlik yönetimi. Rol bazlı yetkilendirme (RBAC) ile erişim ve işlem yetkileri güvenli biçimde kontrol edilir.</p>
+            </div>
+
+            @* Card 7: Redis Cache & Pagination *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-orange-500 mb-4 bg-gradient-to-br from-orange-500/20 to-orange-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">speed</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Redis Cache & Pagination</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Redis cache altyapısı ile üst düzey performans ve ölçeklenebilirlik. Yüz milyonlarca satırlık veri setleri sorunsuz görüntülenir.</p>
+            </div>
+
+            @* Card 8: Folder Tabanlı Dashboard Yönetimi *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-cyan-500 mb-4 bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">folder_managed</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Folder Tabanlı Dashboard Yönetimi</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard'lar klasör bazlı yönetilebilir. Home Page, kurumsal kullanım senaryolarına uygun düzenli ve erişilebilir yapı sunar.</p>
+            </div>
+
+            @* Card 9: Yüksek Performanslı Büyük Veri Desteği *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-violet-500/50 hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-violet-500 mb-4 bg-gradient-to-br from-violet-500/20 to-violet-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">storage</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Büyük Veri Desteği</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Büyük veri senaryolarında yüksek performans sunacak şekilde optimize edilmiş. Yoğun veri hacmiyle çalışan kurumsal raporlama için uygundur.</p>
+            </div>
+
+            @* Card 10: Refresh & Scheduling *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-teal-500 mb-4 bg-gradient-to-br from-teal-500/20 to-teal-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">autorenew</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Refresh & Scheduling</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard'ların belirlenen periyotlarla otomatik yenilenmesi ve cache'e kaydedilmesi. Kullanıcılar her zaman güncel verilerle çalışır.</p>
+            </div>
+
+            @* Card 11: Row Grouping & Grouped Headers *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-pink-500 mb-4 bg-gradient-to-br from-pink-500/20 to-pink-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">view_list</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Row Grouping & Grouped Headers</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Tablolarda tekrar eden satırlar gruplanarak sade görünüm. Excel export'a birebir yansır. Çok seviyeli gruplama desteği.</p>
+            </div>
+
+            @* Card 12: Column Totals & Reverse Table *@
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-lime-500/50 hover:shadow-xl hover:shadow-lime-500/10 hover:-translate-y-1 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-lime-600 mb-4 bg-gradient-to-br from-lime-500/20 to-lime-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">calculate</span>
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Column Totals & Reverse Table</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">İstenilen kolonlar için otomatik toplam satırları. Gerektiğinde satır ve kolonlar yer değiştirerek tablolar yatay eksende görüntülenebilir.</p>
             </div>
         </div>
     </div>
 </section>
+
+
 
 @* Performance Benchmarks *@
 <section class="py-24 bg-white dark:bg-slate-950 border-y border-slate-100 dark:border-slate-800">

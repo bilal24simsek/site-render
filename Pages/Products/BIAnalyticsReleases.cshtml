@@ -1,0 +1,397 @@
+@page "/urunler/bianalytics/releases"
+@{
+    Layout = "_RevizeLayout";
+    ViewData["Title"] = "Sürüm Geçmişi | BIAnalytics";
+}
+
+<style>
+    :root {
+        --brand-primary: #0f172a;
+        --brand-accent: #2563eb;
+        --brand-background: #ffffff;
+        --brand-slate-50: #f8fafc;
+        --brand-slate-100: #f1f5f9;
+        --brand-slate-200: #e2e8f0;
+        --brand-slate-300: #cbd5e1;
+        --brand-slate-400: #94a3b8;
+        --brand-slate-500: #64748b;
+        --brand-slate-600: #475569;
+        --brand-slate-700: #334155;
+        --brand-slate-800: #1e293b;
+        --brand-slate-900: #0f172a;
+    }
+
+    .releases-container {
+        font-family: inherit;
+        color: var(--brand-slate-700);
+    }
+
+    .releases-title {
+        font-size: 3rem;
+        font-weight: 800;
+        color: var(--brand-slate-900);
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.025em;
+    }
+
+    .releases-subtitle {
+        font-size: 1.125rem;
+        color: var(--brand-slate-500);
+        margin-bottom: 3rem;
+    }
+
+    .series-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--brand-slate-900);
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .series-heading::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--brand-slate-200);
+    }
+
+    .release-card {
+        background: #fff;
+        border: 1px solid var(--brand-slate-200);
+        border-radius: 1rem;
+        padding: 2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    }
+
+    .release-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        border-color: var(--brand-accent);
+    }
+
+    .release-version {
+        font-size: 2.25rem;
+        font-weight: 800;
+        color: var(--brand-slate-900);
+        line-height: 1;
+    }
+
+    .release-date {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--brand-slate-400);
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .badge {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background-color: var(--brand-slate-100);
+        color: var(--brand-slate-700);
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+    }
+
+    .badge-primary {
+        background-color: #dbeafe;
+        color: #1e40af;
+    }
+
+    .card-content {
+        margin: 1.5rem 0;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        color: var(--brand-slate-600);
+        flex-grow: 1;
+    }
+
+    .btn-more-info {
+        align-self: flex-start;
+        color: var(--brand-accent) !important;
+        font-weight: 700;
+        font-size: 0.875rem;
+        text-decoration: none !important;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: gap 0.2s;
+    }
+
+    .btn-more-info:hover {
+        gap: 0.75rem;
+    }
+
+    .btn-see-older {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--brand-slate-50);
+        border: 1px solid var(--brand-slate-200);
+        color: var(--brand-slate-600);
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.75rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        cursor: pointer;
+        margin: 2rem auto 0;
+        transition: all 0.2s;
+    }
+
+    .btn-see-older:hover {
+        background: var(--brand-slate-100);
+        color: var(--brand-slate-900);
+    }
+
+    /* Table Styling */
+    .tested-versions-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--brand-slate-900);
+        margin: 4rem 0 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .tested-versions-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--brand-slate-200);
+    }
+
+    .technical-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin-top: 1rem;
+        border: 1px solid var(--brand-slate-200);
+        border-radius: 0.75rem;
+        overflow: hidden;
+    }
+
+    .technical-table th {
+        background-color: var(--brand-slate-50);
+        border-bottom: 1px solid var(--brand-slate-200);
+        padding: 1rem 1.25rem;
+        text-align: left;
+        color: var(--brand-slate-900);
+        font-weight: 700;
+        font-size: 0.875rem;
+    }
+
+    .technical-table td {
+        border-bottom: 1px solid var(--brand-slate-200);
+        padding: 1rem 1.25rem;
+        font-size: 0.875rem;
+        color: var(--brand-slate-600);
+    }
+
+    .technical-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Dark Mode */
+    .dark .release-card { background: var(--brand-slate-800); border-color: var(--brand-slate-700); }
+    .dark .release-version { color: #fff; }
+    .dark .card-content { color: var(--brand-slate-400); }
+    .dark .series-heading, .dark .tested-versions-title { color: #fff; }
+    .dark .technical-table { border-color: var(--brand-slate-700); }
+    .dark .technical-table th { background-color: var(--brand-slate-900); color: #fff; border-color: var(--brand-slate-700); }
+    .dark .technical-table td { color: var(--brand-slate-400); border-color: var(--brand-slate-700); }
+    .dark .badge { background-color: var(--brand-slate-700); color: var(--brand-slate-300); }
+    .dark .btn-see-older { background: var(--brand-slate-800); border-color: var(--brand-slate-700); color: var(--brand-slate-300); }
+
+    #olderSeries { display: none; }
+    #olderSeries.visible { display: grid; }
+</style>
+
+<div class="releases-container max-w-7xl mx-auto px-4 pt-32 pb-24">
+    <div class="text-center mb-16">
+        <h1 class="releases-title">Sürüm Geçmişi</h1>
+        <p class="releases-subtitle">BIAnalytics gelişim serüveni ve teknik uyumluluk matrisi.</p>
+    </div>
+
+    <section>
+        <h2 class="series-heading">Aktif Seriler</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            @* v1.8 *@
+            <div class="release-card child-hover-accent">
+                <span class="badge badge-primary">Son Kararlı</span>
+                <div class="release-version">1.8</div>
+                <div class="release-date">1 OCAK 2026</div>
+                <div class="card-content">
+                    Stabilizasyon ve performans iyileştirmeleri; Gelişmiş veri akış teknolojisi (Excel/CSV streaming); Çoklu motor desteği.
+                </div>
+                <a href="/urunler/bianalytics/releases/1.8" class="btn-more-info">
+                    Detayları İncele <span class="material-symbols-outlined !text-lg">chevron_right</span>
+                </a>
+            </div>
+
+            @* v1.7 *@
+            <div class="release-card">
+                <span class="badge">Kararlı</span>
+                <div class="release-version">1.7</div>
+                <div class="release-date">28 KASIM 2025</div>
+                <div class="card-content">
+                    Cron tabanlı yenileme zamanlama; Gelişmiş önbellek yönetimi ve otomasyon desteği; Büyük veri setleri için optimizasyon.
+                </div>
+                <a href="/urunler/bianalytics/releases/1.7" class="btn-more-info">
+                    Detayları İncele <span class="material-symbols-outlined !text-lg">chevron_right</span>
+                </a>
+            </div>
+
+            @* v1.6 *@
+            <div class="release-card">
+                <span class="badge">Kararlı</span>
+                <div class="release-version">1.6</div>
+                <div class="release-date">11 ARALIK 2024</div>
+                <div class="card-content">
+                    Derin Redis önbellek entegrasyonu; Filtre durumu ve sorgu sonucu önbellekleme; Yüksek eşzamanlı kullanıcı desteği.
+                </div>
+                <a href="/urunler/bianalytics/releases/1.6" class="btn-more-info">
+                    Detayları İncele <span class="material-symbols-outlined !text-lg">chevron_right</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button onclick="toggleOlderSeries()" class="btn-see-older" id="btnToggle">
+                <span class="material-symbols-outlined !text-lg">history</span>
+                Önceki Sürümleri Gör
+            </button>
+        </div>
+
+        <div id="olderSeries" class="grid md:grid-cols-3 gap-8 mt-8">
+             @* v1.5 *@
+            <div class="release-card">
+                <span class="badge">Arşiv</span>
+                <div class="release-version">1.5</div>
+                <div class="release-date">10 HAZİRAN 2025</div>
+                <div class="card-content">PDF Raporlama ve Otomatik E-posta gönderimi; Yüksek çözünürlüklü dashboard render motoru.</div>
+                <a href="/urunler/bianalytics/releases/1.5" class="btn-more-info">Detaylar <span class="material-symbols-outlined !text-lg">chevron_right</span></a>
+            </div>
+
+            @* v1.4 *@
+            <div class="release-card">
+                <span class="badge">Arşiv</span>
+                <div class="release-version">1.4</div>
+                <div class="release-date">22 MART 2025</div>
+                <div class="card-content">Sınırsız klasör hiyerarşisi yönetimi; İçerik bazlı rol yönetimi; Kurumsal ana sayfa tasarımı.</div>
+                <a href="/urunler/bianalytics/releases/1.4" class="btn-more-info">Detaylar <span class="material-symbols-outlined !text-lg">chevron_right</span></a>
+            </div>
+
+            @* v1.3 *@
+            <div class="release-card">
+                <span class="badge">Arşiv</span>
+                <div class="release-version">1.3</div>
+                <div class="release-date">10 OCAK 2025</div>
+                <div class="card-content">Sunucu taraflı sayfalama (Pagination); Satır gruplama ve sütun toplamları; Ters tablo görünümü.</div>
+                <a href="/urunler/bianalytics/releases/1.3" class="btn-more-info">Detaylar <span class="material-symbols-outlined !text-lg">chevron_right</span></a>
+            </div>
+
+             @* v1.2 *@
+            <div class="release-card">
+                <span class="badge">Arşiv</span>
+                <div class="release-version">1.2</div>
+                <div class="release-date">15 ARALIK 2024</div>
+                <div class="card-content">Tam veriseti CSV dışa aktarımı; Grafik bazlı seçilebilir Excel aktarımı; Veri transfer hızı optimizasyonu.</div>
+                <a href="/urunler/bianalytics/releases/1.2" class="btn-more-info">Detaylar <span class="material-symbols-outlined !text-lg">chevron_right</span></a>
+            </div>
+
+             @* v1.1 *@
+            <div class="release-card">
+                <span class="badge">Arşiv</span>
+                <div class="release-version">1.1</div>
+                <div class="release-date">5 ARALIK 2024</div>
+                <div class="card-content">Dashboard Dışa Aktarımı (v1) yetenekleri; Çok sekmeli rapor çıktıları; Format korumalı aktarım.</div>
+                <a href="/urunler/bianalytics/releases/1.1" class="btn-more-info">Detaylar <span class="material-symbols-outlined !text-lg">chevron_right</span></a>
+            </div>
+
+             @* v1.0 *@
+            <div class="release-card">
+                <span class="badge">Arşiv</span>
+                <div class="release-version">1.0</div>
+                <div class="release-date">1 ARALIK 2024</div>
+                <div class="card-content">Resmi Kurumsal Sürüm Yayınlandı; RBAC ve LDAP entegrasyonu; Asenkron sorgu mimarisi.</div>
+                <a href="/urunler/bianalytics/releases/1.0" class="btn-more-info">Detaylar <span class="material-symbols-outlined !text-lg">chevron_right</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="tested-versions-title">Teknik Uyumluluk Matrisi</h2>
+        
+        <div class="overflow-x-auto">
+            <table class="technical-table">
+                <thead>
+                    <tr>
+                        <th>Bileşen</th>
+                        <th>Versiyon 1.8</th>
+                        <th>Versiyon 1.7</th>
+                        <th>Versiyon 1.6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Superset Core</strong></td>
+                        <td>4.0+ (Analytical Services 4.1)</td>
+                        <td>3.1 ve üzeri</td>
+                        <td>3.0 ve üzeri</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Python Runtime</strong></td>
+                        <td>3.10+</td>
+                        <td>3.10+</td>
+                        <td>3.9.x</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Redis Cache</strong></td>
+                        <td>7.2</td>
+                        <td>7.0</td>
+                        <td>6.2</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PostgreSQL</strong></td>
+                        <td>DB: 15 / 16; Driver: 42.7</td>
+                        <td>DB: 14 / 15; Driver: 42.6</td>
+                        <td>DB: 14; Driver: 42.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div class="mt-20 pt-12 border-t border-slate-200 dark:border-slate-800 flex justify-center">
+        <a href="/urunler/bianalytics" class="px-8 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-xl hover:bg-blue-600 transition-all">Ürün Sayfasına Dön</a>
+    </div>
+</div>
+
+<script>
+    function toggleOlderSeries() {
+        const older = document.getElementById('olderSeries');
+        const btn = document.getElementById('btnToggle');
+        if (older.classList.contains('visible')) {
+            older.classList.remove('visible');
+            btn.innerHTML = '<span class="material-symbols-outlined !text-lg">history</span> Önceki Sürümleri Gör';
+        } else {
+            older.classList.add('visible');
+            btn.innerHTML = '<span class="material-symbols-outlined !text-lg">expand_less</span> Eski Sürümleri Kapat';
+        }
+    }
+</script>
