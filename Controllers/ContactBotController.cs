@@ -51,7 +51,7 @@ namespace Sitem.Web.Controllers
                 var toAddress = string.IsNullOrWhiteSpace(_smtpOptions.To) ? _smtpOptions.From! : _smtpOptions.To!;
                 using var mail = new MailMessage(_smtpOptions.From!, toAddress)
                 {
-                    Subject = "Web Sitesi Sohbet Talebi",
+                    Subject = $"Yeni Demo Talebi: {request.AdSoyad}",
                     Body = body.ToString(),
                     IsBodyHtml = false
                 };
