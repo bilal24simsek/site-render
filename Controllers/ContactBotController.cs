@@ -49,7 +49,8 @@ namespace Sitem.Web.Controllers
 
                 var body = BuildBody(request);
                 var toAddress = string.IsNullOrWhiteSpace(_smtpOptions.To) ? _smtpOptions.From! : _smtpOptions.To!;
-                using var mail = new MailMessage(_smtpOptions.From!, toAddress)
+                var fromAddress = new MailAddress(_smtpOptions.From!, "BIAnalytics | Bilgi Sistemi");
+                using var mail = new MailMessage(fromAddress, new MailAddress(toAddress))
                 {
                     Subject = $"Yeni Demo Talebi: {request.AdSoyad}",
                     Body = body.ToString(),

@@ -25,67 +25,95 @@
             </div>
         </div>
 
-        <div class="mt-20" data-aos="fade-up" data-aos-delay="200">
-            <div class="relative rounded-[3rem] overflow-hidden shadow-2xl border border-slate-200 dark:border-white/10">
-                <div class="bg-slate-50 dark:bg-slate-900 p-2 md:p-4">
-                     <div class="aspect-[16/9] bg-white dark:bg-slate-800 rounded-[2rem] overflow-hidden flex items-center justify-center p-4 md:p-8">
-                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full h-full">
-                             <div class="md:col-span-2 bg-blue-500/5 rounded-2xl border border-blue-500/10 p-6 flex flex-col justify-end relative overflow-hidden group">
-                                 <div class="absolute inset-0 bg-gradient-to-t from-blue-500/10 to-transparent opacity-50"></div>
-                                 <!-- Mock Line Chart -->
-                                 <div class="w-full h-32 flex items-end gap-2 px-2 pb-2">
-                                     <div class="w-1/6 h-[40%] bg-blue-400/30 rounded-t-sm"></div>
-                                     <div class="w-1/6 h-[60%] bg-blue-400/40 rounded-t-sm"></div>
-                                     <div class="w-1/6 h-[50%] bg-blue-400/50 rounded-t-sm"></div>
-                                     <div class="w-1/6 h-[80%] bg-blue-500/60 rounded-t-sm"></div>
-                                     <div class="w-1/6 h-[70%] bg-blue-500/80 rounded-t-sm"></div>
-                                     <div class="w-1/6 h-[90%] bg-blue-600 rounded-t-sm animate-pulse"></div>
-                                 </div>
-                                 <div class="mt-4 text-xs font-bold text-blue-500 uppercase tracking-widest relative z-10">Aylık Gelir Analizi</div>
-                             </div>
-                             <div class="col-span-1 bg-indigo-500/5 rounded-2xl border border-indigo-500/10 p-6 flex items-center justify-center relative">
-                                 <div class="absolute inset-0 flex items-center justify-center">
-                                     <span class="text-2xl font-black text-indigo-500">85%</span>
-                                 </div>
-                                 <svg class="w-24 h-24 transform -rotate-90">
-                                     <circle cx="48" cy="48" r="40" stroke="currentColor" stroke-width="8" fill="transparent" class="text-indigo-200 dark:text-indigo-900" />
-                                     <circle cx="48" cy="48" r="40" stroke="currentColor" stroke-width="8" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="37.68" class="text-indigo-500" stroke-linecap="round" />
-                                 </svg>
-                                 <div class="absolute bottom-4 text-[10px] font-bold text-indigo-400 uppercase">Hedef</div>
-                             </div>
-                             <div class="col-span-1 bg-slate-500/5 rounded-2xl border border-slate-500/10 p-6 flex flex-col justify-between">
-                                 <div class="flex items-start justify-between">
-                                     <div class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700"></div>
-                                     <div class="h-2 w-12 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
-                                 </div>
-                                 <div class="space-y-2">
-                                     <div class="h-2 w-full bg-slate-200 dark:bg-slate-700 rounded-full"></div>
-                                     <div class="h-2 w-2/3 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
-                                 </div>
-                             </div>
-                             <div class="col-span-1 bg-green-500/5 rounded-2xl border border-green-500/10 p-6 flex flex-col justify-between">
-                                 <div class="text-xs font-bold text-green-500 uppercase">Aktif Kullanıcı</div>
-                                 <div class="text-3xl font-black text-slate-700 dark:text-slate-200">14.2k</div>
-                                 <div class="flex gap-1 h-1.5 mt-2">
-                                     <div class="w-1/3 bg-green-500 rounded-full"></div>
-                                     <div class="w-1/3 bg-green-500/50 rounded-full"></div>
-                                     <div class="w-1/3 bg-green-500/20 rounded-full"></div>
-                                 </div>
-                             </div>
-                             <div class="col-span-1 bg-amber-500/5 rounded-2xl border border-amber-500/10 p-6 flex items-center justify-between">
-                                 <div>
-                                     <div class="text-xs font-bold text-amber-500 uppercase mb-1">Dönüşüm</div>
-                                     <div class="text-2xl font-black text-slate-700 dark:text-slate-200">2.4%</div>
-                                 </div>
-                                 <span class="material-symbols-outlined text-amber-500 text-3xl">trending_up</span>
-                             </div>
-                         </div>
-                     </div>
+        <div class="mt-20 relative min-h-[600px] flex items-center justify-center pt-8" data-aos="fade-up" data-aos-delay="200">
+            @* High-Fidelity Product Display *@
+            <div class="relative w-full max-w-7xl mx-auto h-[600px] perspective-[2000px]">
+                
+                @* 1. The Real Product Image (Direct Display) *@
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full lg:w-[95%] h-[550px] bg-white dark:bg-[#0f172a] rounded-2xl border border-slate-200 dark:border-white/10 shadow-[0_50px_100px_rgba(0,0,0,0.2)] overflow-hidden z-20 transform-style-3d rotate-x-[5deg] rotate-z-[-1deg]">
+                    <div class="w-full h-full overflow-hidden">
+                        <img src="/logo/raporlama_sayfa_resim.png" alt="BIAnalytics Raporlama Arayüzü" class="w-full h-full object-cover object-top" />
+                    </div>
                 </div>
+
+                @* Subtle Accent Shadow *@
+                <div class="absolute inset-0 -z-10 opacity-20 pointer-events-none">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-blue-500/20 blur-[120px] rounded-full"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        @* Infinite Logo Ribbon (High-Performance Connector Bar) *@
+        <div class="mt-8 border-y border-slate-100 dark:border-white/5 bg-slate-50/20 dark:bg-white/2 py-8 overflow-hidden relative">
+            <div class="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-white dark:from-slate-950 to-transparent z-10"></div>
+            <div class="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-white dark:from-slate-950 to-transparent z-10"></div>
+            
+            <div class="flex items-center gap-20 animate-scroll-normal whitespace-nowrap px-4">
+                @foreach (var platform in new[] { "Oracle", "PostgreSQL", "MSSQL", "MySQL", "MongoDB", "BigQuery", "Snowflake", "ClickHouse", "SAP HANA", "Azure", "Excel", "Tableau", "PowerBI", "CSV", "Dynamics 365", "Salesforce" })
+                {
+                    <div class="flex items-center gap-3 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 transition-all cursor-default group/logo">
+                        <div class="p-2.5 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-white/10 group-hover/logo:scale-110 group-hover/logo:border-blue-500/50 group-hover/logo:shadow-blue-500/10 transition-all overflow-hidden flex items-center justify-center w-10 h-10">
+                            <span class="material-symbols-outlined text-blue-500 text-lg">database</span>
+                        </div>
+                        <span class="text-xs font-black text-slate-500 dark:text-slate-400 uppercase tracking-tighter">@platform</span>
+                    </div>
+                }
+                @foreach (var platform in new[] { "Oracle", "PostgreSQL", "MSSQL", "MySQL", "MongoDB", "BigQuery", "Snowflake", "ClickHouse", "SAP HANA", "Azure", "Excel", "Tableau", "PowerBI", "CSV", "Dynamics 365", "Salesforce" })
+                {
+                    <div class="flex items-center gap-3 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 transition-all cursor-default group/logo">
+                        <div class="p-2.5 rounded-xl bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-white/10 group-hover/logo:scale-110 group-hover/logo:border-blue-500/50 group-hover/logo:shadow-blue-500/10 transition-all overflow-hidden flex items-center justify-center w-10 h-10">
+                            <span class="material-symbols-outlined text-blue-500 text-lg">database</span>
+                        </div>
+                        <span class="text-xs font-black text-slate-500 dark:text-slate-400 uppercase tracking-tighter">@platform</span>
+                    </div>
+                }
             </div>
         </div>
     </div>
 </section>
+
+
+<style>
+    .transform-style-3d { transform-style: preserve-3d; }
+    
+    @@keyframes float-slow {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    @@keyframes float-delayed {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+    
+    @@keyframes scroll-normal {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    
+    @@keyframes dash {
+        0% { stroke-dasharray: 0, 1000; stroke-dashoffset: 0; }
+        100% { stroke-dasharray: 1000, 1000; stroke-dashoffset: -1000; }
+    }
+    
+    @@keyframes pulse-height {
+        0%, 100% { height: 20%; opacity: 0.6; }
+        50% { height: 100%; opacity: 1; }
+    }
+    
+    .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+    .animate-float-delayed { animation: float-delayed 7s ease-in-out infinite; animation-delay: 1.5s; }
+    .animate-scroll-normal { animation: scroll-normal 40s linear infinite; }
+    .animate-dash { animation: dash 4s linear infinite; }
+    .animate-pulse-height { animation: pulse-height 1.2s ease-in-out infinite; }
+    
+    .anim-fill { animation: fill-bar 3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    @@keyframes fill-bar {
+        from { width: 0; }
+    }
+</style>
 
 @* Features Section *@
 <section id="features" class="py-24 bg-slate-50 dark:bg-slate-900/50">
@@ -96,87 +124,417 @@
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             @* Card 1: Gelişmiş Dashboard Export *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-blue-500 mb-4 bg-gradient-to-br from-blue-500/20 to-blue-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">file_download</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Gelişmiş Dashboard Export</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard içerisinde yer alan tüm raporlar tek bir Excel dosyası olarak indirilebilir. Chart'ları tek tek veya seçerek export alma esnekliği.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-export').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-export').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-blue-50/50 dark:hover:bg-blue-900/10">
+                    <span class="material-symbols-outlined text-3xl text-blue-500 mb-4 bg-gradient-to-br from-blue-500/20 to-blue-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">file_download</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Gelişmiş Dashboard Export</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard içerisinde yer alan tüm raporlar tek bir Excel dosyası olarak indirilebilir. Chart'ları tek tek veya seçerek export alma esnekliği.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-blue-600 dark:text-blue-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-export" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-export').classList.add('opacity-0', 'invisible'); document.getElementById('modal-export').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(59,130,246,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
+                                Gelişmiş Dashboard Export - Canlı Canlı İzleyin
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Export Motoru v4.0.2 - Video Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-export').classList.add('opacity-0', 'invisible'); document.getElementById('modal-export').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/gelişmiş-export.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 2: Sürükle-Bırak Dashboard Tasarımı *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-indigo-500 mb-4 bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">dashboard_customize</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Sürükle-Bırak Dashboard Tasarımı</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Teknik bilgiye ihtiyaç duymadan görsel bileşen kütüphanesinden seçim yaparak saniyeler içinde kişisel raporlar ve dashboard'lar tasarlayın.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-drag-drop').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-drag-drop').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-indigo-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-indigo-50/50 dark:hover:bg-indigo-900/10">
+                    <span class="material-symbols-outlined text-3xl text-indigo-500 mb-4 bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">dashboard_customize</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Sürükle-Bırak Dashboard Tasarımı</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Teknik bilgiye ihtiyaç duymadan görsel bileşen kütüphanesinden seçim yaparak saniyeler içinde kişisel raporlar ve dashboard'lar tasarlayın.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-indigo-600 dark:text-indigo-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-drag-drop" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-drag-drop').classList.add('opacity-0', 'invisible'); document.getElementById('modal-drag-drop').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(79,70,229,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-indigo-500 rounded-full"></span>
+                                Sürükle-Bırak Dashboard Tasarımı - Kayıt
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Tasarım Modülü v4.0.2 - HD Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-drag-drop').classList.add('opacity-0', 'invisible'); document.getElementById('modal-drag-drop').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/sürükle-bırak-dashboard.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 3: Evrensel Veri Konnektörleri *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-purple-500 mb-4 bg-gradient-to-br from-purple-500/20 to-purple-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">hub</span>
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-rose-500/50 hover:shadow-xl hover:shadow-rose-500/10 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-rose-500 mb-4 bg-gradient-to-br from-rose-500/20 to-rose-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">hub</span>
                 <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Evrensel Veri Konnektörleri</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Excel, SAP, Google Analytics ve özel veritabanları dahil her türlü veri kaynağı ile entegre çalışır. Farklı sistemlerden veriler tek platformda.</p>
+                <p class="text-sm text-slate-500 dark:text-slate-400">MSSQL, Oracle, PostgreSQL, MySQL ve daha fazlası. Tüm veritabanlarına tek tıkla bağlanın ve verilerinizi anında görselleştirin.</p>
             </div>
 
             @* Card 4: Alerts & Zamanlanmış Raporlama *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-amber-500 mb-4 bg-gradient-to-br from-amber-500/20 to-amber-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">notifications_active</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Alerts & Zamanlanmış Raporlama</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Kurumsal raporlama ihtiyaçlarının temel bileşenlerinden biri olan zamanlanmış raporlar, PDF export ve otomatik e-posta gönderimi.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-alerts').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-alerts').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-amber-50/50 dark:hover:bg-amber-900/10">
+                    <span class="material-symbols-outlined text-3xl text-amber-500 mb-4 bg-gradient-to-br from-amber-500/20 to-amber-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">notifications_active</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Alerts & Zamanlanmış Raporlama</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Kurumsal raporlama ihtiyaçlarının temel bileşenlerinden biri olan zamanlanmış raporlar, PDF export ve otomatik e-posta gönderimi.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-amber-600 dark:text-amber-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-alerts" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-alerts').classList.add('opacity-0', 'invisible'); document.getElementById('modal-alerts').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(245,158,11,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-amber-500 rounded-full"></span>
+                                Alerts & Zamanlanmış Raporlama
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Automation v4.0.2 - System Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-alerts').classList.add('opacity-0', 'invisible'); document.getElementById('modal-alerts').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/Alerts & Zamanlanmış Raporlama.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 5: Full Data CSV Export *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-emerald-500 mb-4 bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">csv</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Full Data CSV Export</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Chart üzerinde gösterilmeyen ancak dataset içerisinde tanımlı olan tüm alanlar, eksiksiz şekilde CSV formatında export edilebilir.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-csv').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-csv').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-emerald-50/50 dark:hover:bg-emerald-900/10">
+                    <span class="material-symbols-outlined text-3xl text-emerald-500 mb-4 bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">csv</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Full Data CSV Export</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Chart üzerinde gösterilmeyen ancak dataset içerisinde tanımlı olan tüm alanlar, eksiksiz şekilde CSV formatında export edilebilir.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-emerald-600 dark:text-emerald-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-csv" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-csv').classList.add('opacity-0', 'invisible'); document.getElementById('modal-csv').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(16,185,129,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-emerald-500 rounded-full"></span>
+                                Full Data CSV Export - Veri Aktarımı
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Export Engine v4.0.2 - Data Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-csv').classList.add('opacity-0', 'invisible'); document.getElementById('modal-csv').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/full-data-export.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 6: LDAP Authentication & RBAC *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-red-500/50 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-red-500 mb-4 bg-gradient-to-br from-red-500/20 to-red-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">admin_panel_settings</span>
+            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 group">
+                <span class="material-symbols-outlined text-3xl text-purple-500 mb-4 bg-gradient-to-br from-purple-500/20 to-purple-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">admin_panel_settings</span>
                 <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">LDAP Authentication & RBAC</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">LDAP entegrasyonu ile kurumsal kimlik yönetimi. Rol bazlı yetkilendirme (RBAC) ile erişim ve işlem yetkileri güvenli biçimde kontrol edilir.</p>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Active Directory entegrasyonu ile merkezi kullanıcı yönetimi. Rol bazlı yetkilendirme ile veri güvenliğini en üst düzeyde tutun.</p>
             </div>
 
             @* Card 7: Redis Cache & Pagination *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-orange-500/50 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-orange-500 mb-4 bg-gradient-to-br from-orange-500/20 to-orange-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">speed</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Redis Cache & Pagination</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Redis cache altyapısı ile üst düzey performans ve ölçeklenebilirlik. Yüz milyonlarca satırlık veri setleri sorunsuz görüntülenir.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-redis').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-redis').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-cyan-50/50 dark:hover:bg-cyan-900/10">
+                    <span class="material-symbols-outlined text-3xl text-cyan-500 mb-4 bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">speed</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Redis Cache & Pagination</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Yüksek trafikli durumlarda bile sorgu sonuçlarını önbelleğe (cache) alarak milisaniyeler içinde yanıt verir. Sayfalama özelliği ile büyük veri setleri hızlıca yüklenir.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-cyan-600 dark:text-cyan-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-redis" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-redis').classList.add('opacity-0', 'invisible'); document.getElementById('modal-redis').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(6,182,212,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-cyan-500 rounded-full"></span>
+                                Redis Cache & Pagination
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Performance v4.0.2 - Cache Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-redis').classList.add('opacity-0', 'invisible'); document.getElementById('modal-redis').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/Redis Cache & Pagination.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 8: Folder Tabanlı Dashboard Yönetimi *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-cyan-500 mb-4 bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">folder_managed</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Folder Tabanlı Dashboard Yönetimi</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard'lar klasör bazlı yönetilebilir. Home Page, kurumsal kullanım senaryolarına uygun düzenli ve erişilebilir yapı sunar.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-folder').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-folder').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-orange-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-orange-50/50 dark:hover:bg-orange-900/10">
+                    <span class="material-symbols-outlined text-3xl text-orange-500 mb-4 bg-gradient-to-br from-orange-500/20 to-orange-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">folder_open</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Folder Tabanlı Dashboard Yönetimi</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Raporları ve dashboardları klasör yapısı (folder structure) içinde düzenleyin. Departman veya proje bazlı yetkilendirme ile yönetim kolaylığı sağlayın.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-orange-600 dark:text-orange-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-folder" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-folder').classList.add('opacity-0', 'invisible'); document.getElementById('modal-folder').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(249,115,22,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-orange-500 rounded-full"></span>
+                                Folder Tabanlı Dashboard Yönetimi
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Organization v4.0.2 - Explorer Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-folder').classList.add('opacity-0', 'invisible'); document.getElementById('modal-folder').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/Folder Tabanlı Dashboard Yönetimi.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 9: Yüksek Performanslı Büyük Veri Desteği *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-violet-500/50 hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-violet-500 mb-4 bg-gradient-to-br from-violet-500/20 to-violet-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">storage</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Büyük Veri Desteği</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Büyük veri senaryolarında yüksek performans sunacak şekilde optimize edilmiş. Yoğun veri hacmiyle çalışan kurumsal raporlama için uygundur.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-bigdata').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-bigdata').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-violet-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-violet-50/50 dark:hover:bg-violet-900/10">
+                    <span class="material-symbols-outlined text-3xl text-violet-500 mb-4 bg-gradient-to-br from-violet-500/20 to-violet-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">storage</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Büyük Veri Desteği</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Büyük veri senaryolarında yüksek performans sunacak şekilde optimize edilmiş. Yoğun veri hacmiyla çalışan kurumsal raporlama için uygundur.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-violet-600 dark:text-violet-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-violet-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-bigdata" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-bigdata').classList.add('opacity-0', 'invisible'); document.getElementById('modal-bigdata').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(139,92,246,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-violet-500 rounded-full"></span>
+                                Büyük Veri Desteği - Yüksek Kapasite
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Scalability v4.0.2 - Big Data Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-bigdata').classList.add('opacity-0', 'invisible'); document.getElementById('modal-bigdata').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/big-data.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 10: Refresh & Scheduling *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-teal-500 mb-4 bg-gradient-to-br from-teal-500/20 to-teal-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">autorenew</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Refresh & Scheduling</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard'ların belirlenen periyotlarla otomatik yenilenmesi ve cache'e kaydedilmesi. Kullanıcılar her zaman güncel verilerle çalışır.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-refresh').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-refresh').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-teal-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-teal-50/50 dark:hover:bg-teal-900/10">
+                    <span class="material-symbols-outlined text-3xl text-teal-500 mb-4 bg-gradient-to-br from-teal-500/20 to-teal-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">autorenew</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Refresh & Scheduling</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Dashboard'ların belirlenen periyotlarla otomatik yenilenmesi ve cache'e kaydedilmesi. Kullanıcılar her zaman güncel verilerle çalışır.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-teal-600 dark:text-teal-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-refresh" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-refresh').classList.add('opacity-0', 'invisible'); document.getElementById('modal-refresh').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(20,184,166,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-teal-500 rounded-full"></span>
+                                Refresh & Scheduling - Otomatik Yenileme
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Scheduling v4.0.2 - Time Flow Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-refresh').classList.add('opacity-0', 'invisible'); document.getElementById('modal-refresh').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/Refresh & Scheduling.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 11: Row Grouping & Grouped Headers *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-pink-500 mb-4 bg-gradient-to-br from-pink-500/20 to-pink-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">view_list</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Row Grouping & Grouped Headers</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Tablolarda tekrar eden satırlar gruplanarak sade görünüm. Excel export'a birebir yansır. Çok seviyeli gruplama desteği.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-grouping').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-grouping').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-pink-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-pink-50/50 dark:hover:bg-pink-900/10">
+                    <span class="material-symbols-outlined text-3xl text-pink-500 mb-4 bg-gradient-to-br from-pink-500/20 to-pink-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">view_list</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Row Grouping & Grouped Headers</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Tablolarda tekrar eden satırlar gruplanarak sade görünüm. Excel export'a birebir yansır. Çok seviyeli gruplama desteği.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-pink-600 dark:text-pink-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-grouping" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-grouping').classList.add('opacity-0', 'invisible'); document.getElementById('modal-grouping').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(236,72,153,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-pink-500 rounded-full"></span>
+                                Row Grouping & Grouped Headers
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Table Engine v4.0.2 - Grid Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-grouping').classList.add('opacity-0', 'invisible'); document.getElementById('modal-grouping').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/Row Grouping & Grouped Headers.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             @* Card 12: Column Totals & Reverse Table *@
-            <div class="bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-lime-500/50 hover:shadow-xl hover:shadow-lime-500/10 hover:-translate-y-1 transition-all duration-300 group">
-                <span class="material-symbols-outlined text-3xl text-lime-600 mb-4 bg-gradient-to-br from-lime-500/20 to-lime-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">calculate</span>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Column Totals & Reverse Table</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">İstenilen kolonlar için otomatik toplam satırları. Gerektiğinde satır ve kolonlar yer değiştirerek tablolar yatay eksende görüntülenebilir.</p>
+            <div class="relative group">
+                <!-- Main Card -->
+                <div onclick="document.getElementById('modal-totals').classList.remove('opacity-0', 'invisible'); document.getElementById('modal-totals').classList.add('opacity-100', 'visible');" class="h-full bg-white dark:bg-slate-900 p-8 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-lime-500/50 hover:shadow-2xl transition-all duration-300 flex flex-col items-start cursor-pointer hover:bg-lime-50/50 dark:hover:bg-lime-900/10">
+                    <span class="material-symbols-outlined text-3xl text-lime-600 mb-4 bg-gradient-to-br from-lime-500/20 to-lime-500/5 w-14 h-14 flex items-center justify-center rounded-2xl group-hover:scale-110 transition-transform duration-300">calculate</span>
+                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3">Column Totals & Reverse Table</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">İstenilen kolonlar için otomatik toplam satırları. Gerektiğinde satır ve kolonlar yer değiştirerek tablolar yatay eksende görüntülenebilir.</p>
+                    
+                    <div class="mt-auto pt-6 flex items-center gap-2 text-lime-600 dark:text-lime-400 text-[10px] font-black uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 w-full">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>
+                        </span>
+                        İzlemek İçin Tıklayın
+                    </div>
+                </div>
+
+                @* Modal *@
+                <div id="modal-totals" class="fixed inset-0 opacity-0 invisible transition-all duration-500 ease-in-out z-[9999] flex items-center justify-center p-4 md:p-12">
+                    <div class="absolute inset-0 bg-slate-950/90 backdrop-blur-2xl" onclick="document.getElementById('modal-totals').classList.add('opacity-0', 'invisible'); document.getElementById('modal-totals').classList.remove('opacity-100', 'visible');"></div>
+                    <div class="relative w-full max-w-7xl aspect-video bg-black rounded-[3rem] p-2 md:p-4 shadow-[0_0_100px_rgba(132,204,22,0.3)] border border-white/10 overflow-hidden transform scale-95 transition-transform duration-500">
+                        <div class="absolute top-8 left-10 z-20 hidden md:block">
+                            <h4 class="text-2xl font-black text-white/90 mb-1 flex items-center gap-3">
+                                <span class="w-2 h-8 bg-lime-500 rounded-full"></span>
+                                Column Totals & Reverse Table
+                            </h4>
+                            <p class="text-white/40 text-sm">BIAnalytics Analytics v4.0.2 - Computation Preview</p>
+                        </div>
+                        <button onclick="document.getElementById('modal-totals').classList.add('opacity-0', 'invisible'); document.getElementById('modal-totals').classList.remove('opacity-100', 'visible');" class="absolute top-8 right-10 z-30 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-white/20 transition-all border border-white/5">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                        <div class="w-full h-full rounded-[2rem] overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10">
+                            <video class="w-full h-full object-contain" autoplay loop muted playsinline>
+                                <source src="/videos/Column Totals & Reverse Table.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
